@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Intelligent UI · 嵌入</title>
+    <link rel="stylesheet" href="/dil/dil.css" />
+    <style>
+      body { margin: 0; background: var(--dil-bg); }
+      .page { max-width: 880px; margin: 0 auto; padding: 56px 24px 96px; }
+      h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: -0.02em; }
+      .lead { margin: 0 0 40px; font-size: 16px; color: var(--dil-text-secondary); max-width: 620px; }
+      section { margin-bottom: 48px; }
+      h2 { margin: 0 0 6px; font-size: 18px; }
+      section > p { margin: 0 0 14px; color: var(--dil-text-secondary); font-size: 14.5px; }
+      pre {
+        margin: 0 0 16px;
+        padding: 14px 16px;
+        border-radius: 14px;
+        background: var(--dil-sunken);
+        font: 12.5px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+        color: var(--dil-text-secondary);
+        overflow-x: auto;
+      }
+      .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      @media (max-width: 760px) { .duo { grid-template-columns: 1fr; } }
+      footer { color: var(--dil-text-tertiary); font-size: 13px; }
+      a { color: var(--dil-link); }
+    </style>
+  </head>
+  <body class="dil-root">
+    <main class="page">
+      <h1>把生成的界面嵌进任何页面</h1>
+      <p class="lead">
+        每个 <code class="dil-code">&lt;dil-embed&gt;</code> 都持有自己的 shadow root 和沙箱 iframe：
+        嵌入的界面既不能改宿主页面的样式，也碰不到宿主的 DOM。
+      </p>
+
+      <section>
+        <h2>直接给源码（不经过模型）</h2>
+        <p>源码经 <code class="dil-code">/api/compile</code> 编译后送进沙箱，适合把一次生成的结果固定下来复用。</p>
+        <pre>&lt;script type="module" src="/dil/embed.js"&gt;&lt;/script&gt;
+&lt;dil-embed title="计数器" source="…DIL 源码…"&gt;&lt;/dil-embed&gt;</pre>
+        <dil-embed id="counter" title="计数器"></dil-embed>
+      </section>
+
+      <section>
+        <h2>两个实例互不干扰</h2>
+        <p>各自独立的沙箱与状态：在左边操作不会影响右边。</p>
+        <div class="duo">
+          <dil-embed class="twin" title="A"></dil-embed>
+          <dil-embed class="twin" title="B"></dil-embed>
+        </div>
+      </section>
+
+      <section>
+        <h2>交给 agent 现场生成</h2>
+        <p>和聊天页走同一条流式管线。会调用当前配置的模型，点按钮再开始。</p>
+        <pre>&lt;dil-embed prompt="做一个番茄钟" height="560"&gt;&lt;/dil-embed&gt;</pre>
+        <button class="dil-button dil-variant-solid" id="live">开始生成</button>
+        <div id="live-host"></div>
+      </section>
+
+      <footer>
+        沙箱文档：<a href="/sandbox/runner.html" target="_blank" rel="noreferrer">/sandbox/runner.html</a>，
+        CSP 为 <code class="dil-code">default-src 'none'</code>。
+      </footer>
+    </main>
+
+    <script type="module">
+      const COUNTER = [
+        '{@body const [n,setN] = DIL.useState(3)}',
+        '<box gap={3}>',
+        '  <row justify="between">',
+        '    <title size="lg">已点击 {n} 次</title>',
+        '    <badge color={n>=8?"warning":"success"}>{n>=8?"偏高":"正常"}</badge>',
+        '  </row>',
+        '  <progress value={n*10} max={100} label="强度" showValue/>',
+        '  <row gap={2}>',
+        '    <button onClick={()=>setN(n+1)}><icon name="plus" inline/>加一</button>',
+        '    <button variant="outline" onClick={()=>setN(0)}>归零</button>',
+        '  </row>',
+        '</box>',
+      ].join('\n');
+
+      // `source` is read when the element upgrades, so set it before defining <dil-embed>
+      document.querySelectorAll('#counter, .twin').forEach((el) => el.setAttribute('source', COUNTER));
+      await import('/dil/embed.js');
+
+      document.getElementById('live').addEventListener('click', (e) => {
+        e.target.remove();
+        const el = document.createElement('dil-embed');
+        el.setAttribute('title', '现场生成');
+        el.setAttribute('prompt', '做一个番茄钟：可选专注时长，可勾选今天完成的任务，并用饼图显示完成比例');
+        document.getElementById('live-host').append(el);
+      });
+    </script>
+  </body>
+</html>

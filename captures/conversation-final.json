@@ -1,0 +1,544 @@
+{
+ "title": "生成智能界面示例",
+ "create_time": 1791439212.095179,
+ "update_time": 1791439373.397266,
+ "moderation_results": [],
+ "plugin_ids": null,
+ "conversation_id": "35349ae3-74a0-42ca-a7be-7d278c9655b1",
+ "conversation_template_id": null,
+ "gizmo_id": null,
+ "gizmo_type": null,
+ "is_archived": false,
+ "is_starred": null,
+ "safe_urls": [
+  "https://docs.typesafe.ai/introduction",
+  "https://www.openai.com",
+  "https://payco.com/docs/en/essentials/product-overview",
+  "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/"
+ ],
+ "blocked_urls": [],
+ "default_model_slug": "gpt-6-thinking",
+ "atlas_mode_enabled": null,
+ "conversation_origin": null,
+ "is_read_only": null,
+ "voice": null,
+ "async_status": 4,
+ "disabled_tool_ids": [],
+ "is_temporary_chat": false,
+ "is_do_not_remember": false,
+ "memory_scope": "global_enabled",
+ "context_scopes": null,
+ "sugar_item_id": null,
+ "sugar_item_visible": false,
+ "pinned_time": null,
+ "is_study_mode": false,
+ "owner": null,
+ "sectioned_conversation": null,
+ "mapping": {
+  "client-created-root": {
+   "id": "client-created-root",
+   "message": null,
+   "parent": null,
+   "children": [
+    "01b08f60-b698-42d9-a236-cf77bd019d0e"
+   ]
+  },
+  "01b08f60-b698-42d9-a236-cf77bd019d0e": {
+   "id": "01b08f60-b698-42d9-a236-cf77bd019d0e",
+   "message": {
+    "id": "01b08f60-b698-42d9-a236-cf77bd019d0e",
+    "author": {
+     "role": "user",
+     "name": null,
+     "metadata": {}
+    },
+    "create_time": 1791439212.031,
+    "update_time": 1791439372.967056,
+    "content": {
+     "content_type": "text",
+     "parts": [
+      "我想要请你生成一个复杂的 intelligent-ui 的示例"
+     ]
+    },
+    "status": "finished_successfully",
+    "end_turn": null,
+    "weight": 1.0,
+    "metadata": {
+     "request_id": "4b63a82c-27a6-4326-a8c4-f23bc2bbbeaa",
+     "message_source": null,
+     "turn_exchange_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "working_turn_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "can_save": false
+    },
+    "recipient": "all",
+    "channel": null
+   },
+   "parent": "client-created-root",
+   "children": [
+    "7b7c42ca-534e-4676-a675-cbeec1a543a1"
+   ]
+  },
+  "7b7c42ca-534e-4676-a675-cbeec1a543a1": {
+   "id": "7b7c42ca-534e-4676-a675-cbeec1a543a1",
+   "message": {
+    "id": "7b7c42ca-534e-4676-a675-cbeec1a543a1",
+    "author": {
+     "role": "assistant",
+     "name": null,
+     "metadata": {}
+    },
+    "create_time": 1791439220.457751,
+    "update_time": 1791439281.794663,
+    "content": {
+     "content_type": "thoughts",
+     "thoughts": [
+      {
+       "summary": "设计智能账单中心",
+       "content": "我正在把它设计成一个模拟 SaaS 计费指挥中心，包含总览、计费沙盒和交易审计三部分。界面会联动日期、环境、指标、风险筛选与定价参数，并明确标注示例数据。",
+       "chunks": [],
+       "finished": true
+      },
+      {
+       "summary": "完善交互模型",
+       "content": "我正在补充三种视图：总览、计费沙盒和异常审计。它们会共享时间范围、环境与指标状态；沙盒实时计算成本、积分消耗和利润，审计区支持搜索、风险筛选与交易详情展开。",
+       "chunks": [],
+       "finished": true
+      },
+      {
+       "summary": "构建智能演示",
+       "content": "我正在把它实现为完全虚构、可交互的账单运营台：指标、图表、排名、交易表和模拟故障会联动更新。界面会突出“模拟重试风暴”等场景，展示从运营概览到异常定位的完整路径。",
+       "chunks": [],
+       "finished": true
+      },
+      {
+       "summary": "完成界面规划",
+       "content": "我正在收束这个虚构演示：顶部展示范围、环境、指标和故障开关；总览呈现趋势与风险，沙盒计算定价结果，审计区支持筛选、展开和定位异常。",
+       "chunks": [],
+       "finished": true
+      },
+      {
+       "summary": "设计智能账单中心并完成界面规划",
+       "content": "",
+       "chunks": [],
+       "finished": true
+      }
+     ],
+     "source_analysis_msg_id": "5685f452-0ba6-4995-a07d-64e67dd075a9"
+    },
+    "status": "finished_successfully",
+    "end_turn": false,
+    "weight": 1.0,
+    "metadata": {
+     "reasoning_status": "is_reasoning",
+     "tool_icons": [],
+     "citations": [],
+     "content_references": [],
+     "resolved_model_slug": "gpt-6-thinking",
+     "hide_inline_actions": true,
+     "disable_turn_actions": true,
+     "chime_version": 1,
+     "cot_version": "v5",
+     "request_id": "4b63a82c-27a6-4326-a8c4-f23bc2bbbeaa",
+     "message_type": "next",
+     "turn_exchange_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "working_turn_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "model_slug": "gpt-6-thinking",
+     "default_model_slug": "gpt-6-thinking",
+     "thinking_effort": "extended",
+     "parent_id": "5685f452-0ba6-4995-a07d-64e67dd075a9",
+     "summary_type": "raw_cot",
+     "classifier_response": "default",
+     "reasoning_start_time": 1791439212.7425427,
+     "skip_reasoning_title": "跳过",
+     "conversation_followup_suggestions_eligible": false,
+     "can_save": false,
+     "model_switcher_deny": []
+    },
+    "recipient": "all",
+    "channel": null
+   },
+   "parent": "01b08f60-b698-42d9-a236-cf77bd019d0e",
+   "children": [
+    "6b124c46-2806-4d77-a2eb-f764c3976aa2"
+   ]
+  },
+  "6b124c46-2806-4d77-a2eb-f764c3976aa2": {
+   "id": "6b124c46-2806-4d77-a2eb-f764c3976aa2",
+   "message": {
+    "id": "6b124c46-2806-4d77-a2eb-f764c3976aa2",
+    "author": {
+     "role": "assistant",
+     "name": null,
+     "metadata": {}
+    },
+    "create_time": 1791439281.903855,
+    "update_time": 1791439282.039484,
+    "content": {
+     "content_type": "text",
+     "parts": [
+      "我用一个与你之前讨论过的 Acme Billing 相关的场景来演示：做成可交互的计费控制台，而不是静态截图。它会包含联动图表、异常注入、成本预测、钱包试扣和交易审计，所有数据都标注为模拟数据。"
+     ]
+    },
+    "status": "finished_successfully",
+    "end_turn": false,
+    "weight": 1.0,
+    "metadata": {
+     "citations": [],
+     "model_dil_v2": {
+      "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(\"text\",null,__dilConstants[\"0\"]);},{\"key\":\"body:0\"}));",
+      "constants": {
+       "0": "我用一个与你之前讨论过的 Acme Billing 相关的场景来演示：做成可交互的计费控制台，而不是静态截图。它会包含联动图表、异常注入、成本预测、钱包试扣和交易审计，所有数据都标注为模拟数据。"
+      },
+      "fallbackMarkdown": "我用一个与你之前讨论过的 Acme Billing 相关的场景来演示：做成可交互的计费控制台，而不是静态截图。它会包含联动图表、异常注入、成本预测、钱包试扣和交易审计，所有数据都标注为模拟数据。",
+      "fallbackMarkdownVersion": 1,
+      "appData": {
+       "opGenui": {
+        "componentResults": {},
+        "modelDataBindings": {}
+       }
+      }
+     },
+     "view_state": {},
+     "resolved_model_slug": "gpt-6-thinking",
+     "is_thinking_preamble_message": true,
+     "reasoning_status": "is_reasoning",
+     "hide_inline_actions": true,
+     "disable_turn_actions": true,
+     "chime_version": 1,
+     "classifier_response": "default",
+     "reasoning_start_time": 1791439212.7425427,
+     "cot_version": "v5",
+     "request_id": "4b63a82c-27a6-4326-a8c4-f23bc2bbbeaa",
+     "message_type": "next",
+     "turn_exchange_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "working_turn_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "model_slug": "gpt-6-thinking",
+     "default_model_slug": "gpt-6-thinking",
+     "thinking_effort": "extended",
+     "can_save": true,
+     "parent_id": "7b7c42ca-534e-4676-a675-cbeec1a543a1",
+     "model_switcher_deny": []
+    },
+    "recipient": "all",
+    "channel": "commentary"
+   },
+   "parent": "7b7c42ca-534e-4676-a675-cbeec1a543a1",
+   "children": [
+    "3366f56f-32b3-45af-ac69-0a4483fbc261"
+   ]
+  },
+  "3366f56f-32b3-45af-ac69-0a4483fbc261": {
+   "id": "3366f56f-32b3-45af-ac69-0a4483fbc261",
+   "message": {
+    "id": "3366f56f-32b3-45af-ac69-0a4483fbc261",
+    "author": {
+     "role": "assistant",
+     "name": null,
+     "metadata": {}
+    },
+    "create_time": 1791439297.089041,
+    "update_time": 1791439297.089041,
+    "content": {
+     "content_type": "reasoning_recap",
+     "content": "思考了 1m 24s"
+    },
+    "status": "finished_successfully",
+    "end_turn": false,
+    "weight": 1.0,
+    "metadata": {
+     "reasoning_status": "reasoning_ended",
+     "finished_duration_sec": 84,
+     "reasoning_start_time": 1791439212.7425427,
+     "reasoning_end_time": 1791439297.0803838,
+     "reasoning_recap_type": "collapse",
+     "cot_version": "v5",
+     "conversation_followup_suggestions_eligible": false,
+     "request_id": "4b63a82c-27a6-4326-a8c4-f23bc2bbbeaa",
+     "message_type": "next",
+     "turn_exchange_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "working_turn_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "resolved_model_slug": "gpt-6-thinking",
+     "model_slug": "gpt-6-thinking",
+     "default_model_slug": "gpt-6-thinking",
+     "thinking_effort": "extended",
+     "can_save": false,
+     "parent_id": "7f2ca4c2-a2f0-49d0-a2c6-3d4cba076667",
+     "hide_inline_actions": true,
+     "model_switcher_deny": []
+    },
+    "recipient": "all",
+    "channel": null
+   },
+   "parent": "6b124c46-2806-4d77-a2eb-f764c3976aa2",
+   "children": [
+    "5e9e6e76-eeca-4f19-ab61-5655103f36fe"
+   ]
+  },
+  "5e9e6e76-eeca-4f19-ab61-5655103f36fe": {
+   "id": "5e9e6e76-eeca-4f19-ab61-5655103f36fe",
+   "message": {
+    "id": "5e9e6e76-eeca-4f19-ab61-5655103f36fe",
+    "author": {
+     "role": "assistant",
+     "name": null,
+     "metadata": {}
+    },
+    "create_time": 1791439297.703263,
+    "update_time": 1791439372.590447,
+    "content": {
+     "content_type": "text",
+     "parts": [
+      "下面是一个完整的 **Intelligent UI 交互实验台**。它模拟一个 AI 产品的 Billing Control Center，包含三个可切换的工作区。所有数据均为虚构，交互计算在当前界面中完成，不会操作真实数据库或发起支付。\n\n{@body const [tab,setTab] = DIL.useState(\"overview\")}\n{@body const [period,setPeriod] = DIL.useState(\"7\")}\n{@body const [channel,setChannel] = DIL.useState(\"all\")}\n{@body const [incident,setIncident] = DIL.useState(false)}\n{@body const [model,setModel] = DIL.useState(\"balanced\")}\n{@body const [turns,setTurns] = DIL.useState(8000)}\n{@body const [retry,setRetry] = DIL.useState(5)}\n{@body const [rewards,setRewards] = DIL.useState(15)}\n{@body const [wallet,setWallet] = DIL.useState(250)}\n{@body const [ledger,setLedger] = DIL.useState([])}\n{@body const [message,setMessage] = DIL.useState(\"\")}\n{@body const [search,setSearch] = DIL.useState(\"\")}\n{@body const [statusFilter,setStatusFilter] = DIL.useState(\"all\")}\n{@body const [riskOnly,setRiskOnly] = DIL.useState(false)}\n{@body const [selectedAudit,setSelectedAudit] = DIL.useState(\"EVT-1042\")}\n{@body const money = (v) => \"$\"+Number(v).toLocaleString(\"en-US\",{minimumFractionDigits:2,maximumFractionDigits:2})}\n{@body const number = (v) => Math.round(v).toLocaleString(\"en-US\")}\n{@body const channelFactor = {all:1,web:0.52,ios:0.31,android:0.17}[channel]}\n{@body const n = period===\"7\"?7:period===\"30\"?10:12}\n{@body const step = Number(period)/n}\n{@body const swings = [-3,2,-1,3,0,4,-2,1,3,-1,2,4]}\n{@body const trendData = Array.from({length:n},(_,i)=>({period:period===\"7\"?\"D-\"+(n-1-i):period===\"30\"?\"P\"+(i+1):\"W\"+(i+1),revenue:Math.round((2700+swings[i]*93)*step*channelFactor),cost:Math.round((960+swings[i]*29)*step*channelFactor*(incident&&i>=n-2?1.75:1))}))}\n{@body const totalRevenue=trendData.reduce((a,b)=>a+b.revenue,0)}\n{@body const totalCost=trendData.reduce((a,b)=>a+b.cost,0)}\n{@body const marginPct=(totalRevenue-totalCost)/totalRevenue*100}\n{@body const rates={fast:0.006,balanced:0.020,premium:0.055}}\n{@body const modelLabels={fast:\"Fast\",balanced:\"Balanced\",premium:\"Premium\"}}\n{@body const unitCost=rates[model]*(1+retry/100)}\n{@body const creditsPerTurn=Number((unitCost*1000).toFixed(2))}\n{@body const scenarioCost=turns*unitCost}\n{@body const scenarioRevenue=turns*creditsPerTurn*0.004*(1-rewards/100)}\n{@body const scenarioProfit=scenarioRevenue-scenarioCost}\n{@body const scenarioMargin=scenarioRevenue>0?100*scenarioProfit/scenarioRevenue:0}\n{@body const mockEvents=[{id:\"EVT-1042\",user:\"user_4821\",gateway:\"PayCo\",status:\"pending\",amount:120,time:\"14:02:11\",risk:true,note:\"支付渠道已返回成功，权益发放事件尚未确认\",trace:\"trace-b7e2-1042\"},{id:\"EVT-1041\",user:\"user_1209\",gateway:\"App Store\",status:\"success\",amount:3200,time:\"13:59:48\",risk:false,note:\"订阅续期已完成，Credits 已到账\",trace:\"trace-a3c1-1041\"},{id:\"EVT-1040\",user:\"user_8812\",gateway:\"Google Play\",status:\"refunded\",amount:-500,time:\"13:55:16\",risk:false,note:\"退款完成，对应权益已冲正\",trace:\"trace-e8d1-1040\"},{id:\"EVT-1039\",user:\"user_2290\",gateway:\"PayCo\",status:\"failed\",amount:800,time:\"13:51:22\",risk:true,note:\"Webhook 签名校验失败，未写入钱包账本\",trace:\"trace-a8f0-1039\"},{id:\"EVT-1038\",user:\"user_1002\",gateway:\"Internal\",status:\"success\",amount:-20,time:\"13:50:08\",risk:false,note:\"LLM 调用完成，幂等扣费成功\",trace:\"trace-f3c4-1038\"},{id:\"EVT-1037\",user:\"user_9082\",gateway:\"Internal\",status:\"success\",amount:100,time:\"13:48:36\",risk:false,note:\"新用户邀请奖励发放\",trace:\"trace-c1f8-1037\"}]}\n{@body const events = incident?[{id:\"EVT-1050\",user:\"user_4411\",gateway:\"Internal\",status:\"pending\",amount:-44,time:\"14:04:10\",risk:true,note:\"模拟重试风暴：模型调用重复产生 Usage Event，等待幂等检查\",trace:\"trace-incident-1050\"},...mockEvents]:mockEvents}\n{@body const filteredEvents=events.filter(e=>(statusFilter===\"all\"||e.status===statusFilter)&&(!riskOnly||e.risk)&&[e.id,e.user,e.gateway,e.trace].join(\" \").toLowerCase().includes(search.toLowerCase()))}\n{@body const selectedEvent=events.find(e=>e.id===selectedAudit)}\n{@body const statusText={success:\"已完成\",pending:\"待处理\",failed:\"失败\",refunded:\"已退款\"}}\n{@body function chargeOnce(){if(wallet<creditsPerTurn){setMessage(\"余额不足：无法完成本次试扣\");return}const next=Number((wallet-creditsPerTurn).toFixed(2));setWallet(next);setLedger([{id:Date.now(),action:\"模型推理扣费\",delta:-creditsPerTurn,balance:next},...ledger].slice(0,7));setMessage(\"试扣成功：已写入模拟 Ledger\")}}\n{@body function recharge(){const next=Number((wallet+500).toFixed(2));setWallet(next);setLedger([{id:Date.now(),action:\"模拟充值\",delta:500,balance:next},...ledger].slice(0,7));setMessage(\"充值成功：已增加 500 Credits\")}}\n<box border radius=\"2xl\" padding={3} gap={4}>\n  <row align=\"center\" justify=\"between\" wrap=\"wrap\">\n    <row align=\"center\" gap={2}>\n      <box background=\"surface-secondary\" padding={2} radius=\"lg\">\n        <icon name=\"layers-3\" size=\"lg\"/>\n      </box>\n      <box gap={1}>\n        <title size=\"lg\">Acme Billing</title>\n        <caption>Interactive Control Center · Demo</caption>\n      </box>\n    </row>\n    <row align=\"center\" gap={2}>\n      <badge color={incident?\"warning\":\"success\"}>{incident?\"演练异常\":\"系统正常\"}</badge>\n      <text color=\"secondary\" size=\"xs\">Sandbox v1.0</text>\n    </row>\n  </row>\n  <segmented-control block size=\"lg\" value={tab} onChange={setTab} options={[{\"label\":\"📊 运营总览\",\"value\":\"overview\"},{\"label\":\"🧪 计费沙盒\",\"value\":\"sandbox\"},{\"label\":\"🔎 交易审计\",\"value\":\"audit\"}]}/>\n  {#if tab===\"overview\"}\n    <row align=\"center\" justify=\"between\" wrap=\"wrap\">\n      <box gap={1}>\n        <title size=\"lg\">经营概览</title>\n        <text size=\"xs\" color=\"secondary\">可交互模拟数据 · 视图间数据联动</text>\n      </box>\n      <row gap={2} wrap=\"wrap\">\n        <select size=\"md\" value={channel} onChange={setChannel} options={[{\"value\":\"all\",\"label\":\"全部渠道\"},{\"value\":\"web\",\"label\":\"Web\"},{\"value\":\"ios\",\"label\":\"iOS\"},{\"value\":\"android\",\"label\":\"Android\"}]}/>\n        <segmented-control size=\"md\" value={period} onChange={setPeriod} options={[{\"label\":\"7 天\",\"value\":\"7\"},{\"label\":\"30 天\",\"value\":\"30\"},{\"label\":\"90 天\",\"value\":\"90\"}]}/>\n      </row>\n    </row>\n    <grid columns={2} gap={2}>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={2}>\n          <row align=\"center\" justify=\"between\">\n            <text size=\"xs\" color=\"secondary\">模拟净收入</text>\n            <icon name=\"wallet\" color=\"secondary\"/>\n          </row>\n          <title size=\"xl\" color=\"default\" tabularNums>{money(totalRevenue)}</title>\n          <text color=\"success\" size=\"xs\"><icon name=\"trending-up\" inline/> +12.4% 模拟环比</text>\n        </box>\n      </grid-item>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={2}>\n          <row align=\"center\" justify=\"between\">\n            <text size=\"xs\" color=\"secondary\">模型成本</text>\n            <icon name=\"cpu\" color=\"secondary\"/>\n          </row>\n          <title size=\"xl\" tabularNums>{money(totalCost)}</title>\n          <text color={incident?\"danger\":\"secondary\"} size=\"xs\">{incident?\"重试风暴增加成本\":\"占比 \"+(100*totalCost/totalRevenue).toFixed(1)+\"%\"}</text>\n        </box>\n      </grid-item>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={2}>\n          <row align=\"center\" justify=\"between\">\n            <text size=\"xs\" color=\"secondary\">模拟贡献毛利率</text>\n            <icon name=\"chart-no-axes-combined\" color=\"secondary\"/>\n          </row>\n          <title size=\"xl\" tabularNums>{marginPct.toFixed(1)}%</title>\n          <text size=\"xs\" color=\"secondary\">不含固定开销与税费</text>\n        </box>\n      </grid-item>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={2}>\n          <row align=\"center\" justify=\"between\">\n            <text size=\"xs\" color=\"secondary\">调用成功率</text>\n            <icon name=\"activity\" color=\"secondary\"/>\n          </row>\n          <title size=\"xl\" tabularNums>{incident?\"97.30%\":\"99.52%\"}</title>\n          <text color={incident?\"danger\":\"success\"} size=\"xs\">{incident?\"低于 99% 阈值\":\"高于 99% 阈值\"}</text>\n        </box>\n      </grid-item>\n    </grid>\n    <box border radius=\"lg\" padding={3} gap={2}>\n      <row align=\"center\" justify=\"between\">\n        <box gap={1}>\n          **营收与推理成本趋势**\n          <text color=\"secondary\" size=\"xs\">按所选时间窗口聚合 · USD</text>\n        </box>\n        <icon name=\"chart-line\" color=\"secondary\"/>\n      </row>\n      <Chart content={{\"chartType\":\"line\",\"xKey\":\"period\",\"series\":[{\"dataKey\":\"revenue\",\"label\":\"收入\",\"valuePrefix\":\"$\"},{\"dataKey\":\"cost\",\"label\":\"模型成本\",\"valuePrefix\":\"$\"}],\"data\":trendData}}/>\n    </box>\n    <grid columns={2} gap={2}>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={2}>\n          **收入渠道结构**\n          <text size=\"xs\" color=\"secondary\">按渠道分配的模拟收入</text>\n          <Chart content={{\"chartType\":\"bar\",\"xKey\":\"name\",\"series\":[{\"dataKey\":\"value\",\"label\":\"营收\",\"valuePrefix\":\"$\"}],\"data\":[{\"name\":\"Web\",\"value\":Math.round(2700*Number(period)*0.52)},{\"name\":\"iOS\",\"value\":Math.round(2700*Number(period)*0.31)},{\"name\":\"Android\",\"value\":Math.round(2700*Number(period)*0.17)}]}}/>\n        </box>\n      </grid-item>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={3}>\n          **可观测性信号**\n          <box gap={3}>\n            <box gap={1}>\n              <row justify=\"between\">\n                <text color=\"secondary\" size=\"xs\">Webhook 延迟</text>\n                <text weight=\"medium\" size=\"xs\">{incident?\"8.2 s\":\"148 ms\"}</text>\n              </row>\n              <box background=\"surface-tertiary\" height=\"6px\" radius=\"full\" clip>\n                <box background={incident?\"#E58A42\":\"#16A085\"} width={incident?\"92%\":\"14%\"} height=\"100%\" radius=\"full\"/>\n              </box>\n            </box>\n            <box gap={1}>\n              <row justify=\"between\">\n                <text color=\"secondary\" size=\"xs\">账本对账率</text>\n                <text weight=\"medium\" size=\"xs\">{incident?\"97.1%\":\"99.98%\"}</text>\n              </row>\n              <box background=\"surface-tertiary\" height=\"6px\" radius=\"full\" clip>\n                <box background={incident?\"#E58A42\":\"#16A085\"} width={incident?\"85%\":\"99.98%\"} height=\"100%\" radius=\"full\"/>\n              </box>\n            </box>\n            <box gap={1}>\n              <row justify=\"between\">\n                <text color=\"secondary\" size=\"xs\">重复事件抑制率</text>\n                <text weight=\"medium\" size=\"xs\">{incident?\"94.0%\":\"99.99%\"}</text>\n              </row>\n              <box background=\"surface-tertiary\" height=\"6px\" radius=\"full\" clip>\n                <box background={incident?\"#E58A42\":\"#16A085\"} width={incident?\"80%\":\"99.99%\"} height=\"100%\" radius=\"full\"/>\n              </box>\n            </box>\n          </box>\n          <button size=\"sm\" color=\"secondary\" variant=\"outline\" block onClick={()=>setTab(\"audit\")}>检查交易事件 <icon name=\"arrow-right\" inline/></button>\n        </box>\n      </grid-item>\n    </grid>\n    <box border radius=\"lg\" padding={3} gap={3}>\n      <row align=\"start\" justify=\"between\" gap={3}>\n        <row align=\"start\" gap={2}>\n          <icon name={incident?\"alert-triangle\":\"shield-check\"} color={incident?\"danger\":\"success\"} size=\"lg\"/>\n          <box flex=\"1\" gap={1}>\n            **故障注入实验**\n            <text color=\"secondary\" size=\"sm\">{incident?\"已注入模拟的 LLM 重试风暴。模型成本、成功率、延迟、对账率和审计事件均已变化。\":\"模拟 AI 请求链路出现重试风暴，观察多个业务组件如何同步响应。\"}</text>\n          </box>\n        </row>\n      </row>\n      <button block color={incident?\"secondary\":\"primary\"} variant={incident?\"outline\":\"solid\"} onClick={()=>setIncident(!incident)}>\n        <icon name={incident?\"rotate-ccw\":\"zap\"} inline/>\n        {incident?\"结束演练并恢复指标\":\"注入重试风暴\"}\n      </button>\n    </box>\n  {:else if tab===\"sandbox\"}\n    <box gap={1}>\n      <title size=\"lg\">🧪 Credits 计费模拟器</title>\n      <text size=\"sm\" color=\"secondary\">调整推理成本、重试概率和奖励消耗，观察单轮扣费及经营模型的变化。</text>\n    </box>\n    <box border radius=\"lg\" padding={3} gap={3}>\n      **推理配置**\n      <box gap={1}>\n        <label>推理模型档位</label>\n        <radio-group direction=\"col\" value={model} onChange={setModel}>\n          <radio value=\"fast\"><row justify=\"between\" align=\"center\"><text>Fast · 轻量</text><text color=\"secondary\" size=\"sm\">$0.006 / 轮</text></row></radio>\n          <radio value=\"balanced\"><row justify=\"between\" align=\"center\"><text>Balanced · 标准</text><text color=\"secondary\" size=\"sm\">$0.020 / 轮</text></row></radio>\n          <radio value=\"premium\"><row justify=\"between\" align=\"center\"><text>Premium · 高阶</text><text color=\"secondary\" size=\"sm\">$0.055 / 轮</text></row></radio>\n        </radio-group>\n      </box>\n      <divider color=\"subtle\"/>\n      <box gap={2}>\n        <row align=\"center\" justify=\"between\">\n          <label>预计调用轮次</label>\n          <text weight=\"medium\" tabularNums>{number(turns)}</text>\n        </row>\n        <slider min={1000} max={50000} step={1000} value={turns} onChange={setTurns}/>\n        <row justify=\"between\">\n          <caption>1,000</caption>\n          <caption>50,000</caption>\n        </row>\n      </box>\n      <box gap={2}>\n        <row align=\"center\" justify=\"between\">\n          <label>额外重试成本比例</label>\n          <text weight=\"medium\" tabularNums>{retry}%</text>\n        </row>\n        <slider min={0} max={40} step={1} value={retry} onChange={setRetry}/>\n      </box>\n      <box gap={2}>\n        <row align=\"center\" justify=\"between\">\n          <label>奖励 Credits 消费占比</label>\n          <text weight=\"medium\" tabularNums>{rewards}%</text>\n        </row>\n        <slider min={0} max={60} step={5} value={rewards} onChange={setRewards}/>\n        <caption>用于模拟免费奖励带来的收入稀释，不代表真实会计收入确认方法。</caption>\n      </box>\n    </box>\n    <grid columns={2} gap={2}>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={1}>\n          <text size=\"xs\" color=\"secondary\">每轮扣费</text>\n          <title size=\"xl\" tabularNums>{creditsPerTurn}</title>\n          <caption>Credits</caption>\n        </box>\n      </grid-item>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={1}>\n          <text size=\"xs\" color=\"secondary\">预计模型总成本</text>\n          <title size=\"xl\" tabularNums>{money(scenarioCost)}</title>\n          <caption>USD</caption>\n        </box>\n      </grid-item>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={1}>\n          <text size=\"xs\" color=\"secondary\">模拟对应收入</text>\n          <title size=\"xl\" tabularNums>{money(scenarioRevenue)}</title>\n          <caption>以 $0.004 / Credits 估算</caption>\n        </box>\n      </grid-item>\n      <grid-item>\n        <box border radius=\"lg\" padding={3} gap={1}>\n          <text size=\"xs\" color=\"secondary\">预计贡献毛利率</text>\n          <title size=\"xl\" color={scenarioMargin<0?\"danger\":\"default\"} tabularNums>{scenarioMargin.toFixed(1)}%</title>\n          <caption>不含支付手续费等</caption>\n        </box>\n      </grid-item>\n    </grid>\n    <box border radius=\"lg\" padding={3} gap={2}>\n      **情景经济模型**\n      <Chart content={{\"chartType\":\"bar\",\"xKey\":\"item\",\"series\":[{\"dataKey\":\"value\",\"label\":\"USD\",\"valuePrefix\":\"$\"}],\"data\":[{\"item\":\"模拟收入\",\"value\":Math.round(scenarioRevenue)},{\"item\":\"模型成本\",\"value\":Math.round(scenarioCost)},{\"item\":\"贡献毛利\",\"value\":Math.round(scenarioProfit)}]}}/>\n      <text color=\"secondary\" size=\"xs\">扣费示例使用成本约 $0.001 / Credits 的换算假设。负贡献毛利反映为负值。</text>\n    </box>\n    <box border radius=\"lg\" padding={3} gap={3}>\n      <row justify=\"between\" align=\"center\">\n        <box gap={1}>\n          **模拟钱包与 Ledger**\n          <text color=\"secondary\" size=\"xs\">执行真实的本地状态变化，而非静态按钮</text>\n        </box>\n        <icon name=\"database\" color=\"secondary\"/>\n      </row>\n      <box background=\"surface-secondary\" radius=\"lg\" padding={3} gap={1}>\n        <caption>当前测试钱包余额</caption>\n        <row align=\"baseline\" gap={2}>\n          <title size=\"2xl\" tabularNums>{wallet.toFixed(2)}</title>\n          <text color=\"secondary\" size=\"sm\">Credits</text>\n        </row>\n        <text color=\"secondary\" size=\"xs\">本次扣除 {creditsPerTurn.toFixed(2)} Credits</text>\n      </box>\n      <row gap={2}>\n        <box flex=\"1\">\n          <button block onClick={chargeOnce}><icon name=\"minus-circle\" inline/> 试扣一轮</button>\n        </box>\n        <box flex=\"1\">\n          <button block color=\"secondary\" variant=\"outline\" onClick={recharge}><icon name=\"plus-circle\" inline/> 充值 500</button>\n        </box>\n      </row>\n      {#if message!==\"\"}\n        <row align=\"center\" gap={2}>\n          <icon name=\"info\" color=\"secondary\"/>\n          <text size=\"sm\">{message}</text>\n        </row>\n      {/if}\n      <divider color=\"subtle\"/>\n      <row align=\"center\" justify=\"between\">\n        **本次模拟流水**\n        <button size=\"xs\" color=\"secondary\" variant=\"ghost\" onClick={()=>{setWallet(250);setLedger([]);setMessage(\"模拟钱包已重置\")}}>重置</button>\n      </row>\n      {#if ledger.length===0}\n        <box padding={4} align=\"center\" gap={2}>\n          <icon name=\"receipt-text\" size=\"xl\" color=\"tertiary\"/>\n          <text color=\"secondary\" size=\"sm\">暂无流水。点击试扣或充值开始。</text>\n        </box>\n      {:else}\n        <table>\n          <table-row>\n            <table-cell width=\"45%\"><text color=\"secondary\" size=\"xs\">事件</text></table-cell>\n            <table-cell align=\"end\"><text color=\"secondary\" size=\"xs\">变动</text></table-cell>\n            <table-cell align=\"end\"><text color=\"secondary\" size=\"xs\">余额</text></table-cell>\n          </table-row>\n          {#each ledger as item}\n            <table-row>\n              <table-cell><text size=\"sm\">{item.action}</text></table-cell>\n              <table-cell align=\"end\"><text color={item.delta>0?\"success\":\"default\"} tabularNums>{item.delta>0?\"+\":\"\"}{item.delta.toFixed(2)}</text></table-cell>\n              <table-cell align=\"end\"><text tabularNums>{item.balance.toFixed(2)}</text></table-cell>\n            </table-row>\n          {/each}\n        </table>\n      {/if}\n    </box>\n  {:else}\n    <box gap={1}>\n      <title size=\"lg\">🔎 交易事件与审计</title>\n      <text size=\"sm\" color=\"secondary\">搜索、筛选、异常定位与 Master–Detail 详情视图。</text>\n    </box>\n    <box border radius=\"lg\" padding={3} gap={3}>\n      <input value={search} onChange={setSearch} placeholder=\"搜索事件 ID、用户、支付渠道、Trace ID...\"/>\n      <row align=\"center\" justify=\"between\" wrap=\"wrap\" gap={2}>\n        <select size=\"md\" value={statusFilter} onChange={setStatusFilter} options={[{\"value\":\"all\",\"label\":\"全部状态\"},{\"value\":\"success\",\"label\":\"已完成\"},{\"value\":\"pending\",\"label\":\"待处理\"},{\"value\":\"failed\",\"label\":\"失败\"},{\"value\":\"refunded\",\"label\":\"已退款\"}]}/>\n        <checkbox checked={riskOnly} onChange={setRiskOnly} lineThrough={false}>只看异常事件</checkbox>\n      </row>\n      <row align=\"center\" justify=\"between\">\n        <text color=\"secondary\" size=\"xs\">筛选得到 {filteredEvents.length} 条模拟记录</text>\n        <button variant=\"ghost\" color=\"secondary\" size=\"xs\" onClick={()=>{setSearch(\"\");setStatusFilter(\"all\");setRiskOnly(false)}}><icon name=\"rotate-ccw\" inline/> 清除筛选</button>\n      </row>\n      <table>\n        <table-row>\n          <table-cell><text weight=\"medium\" size=\"xs\">事件 ID</text></table-cell>\n          <table-cell><text weight=\"medium\" size=\"xs\">渠道 / 状态</text></table-cell>\n          <table-cell align=\"end\"><text weight=\"medium\" size=\"xs\">操作</text></table-cell>\n        </table-row>\n        {#each filteredEvents as item}\n          <table-row>\n            <table-cell>\n              <box gap={1}>\n                <row align=\"center\" gap={1}>\n                  <text size=\"sm\" weight=\"medium\">{item.id}</text>\n                  {#if item.risk}<icon name=\"alert-triangle\" size=\"xs\" color=\"danger\"/>{/if}\n                </row>\n                <text color=\"secondary\" size=\"xs\">{item.user}</text>\n              </box>\n            </table-cell>\n            <table-cell>\n              <box gap={1}>\n                <text size=\"sm\">{item.gateway}</text>\n                <text color={item.status===\"success\"?\"success\":item.status===\"failed\"?\"danger\":item.status===\"pending\"?\"caution\":\"secondary\"} size=\"xs\">{statusText[item.status]}</text>\n              </box>\n            </table-cell>\n            <table-cell align=\"end\">\n              <button size=\"xs\" color={selectedAudit===item.id?\"primary\":\"secondary\"} variant={selectedAudit===item.id?\"solid\":\"outline\"} onClick={()=>setSelectedAudit(item.id)}>详情</button>\n            </table-cell>\n          </table-row>\n        {/each}\n      </table>\n      {#if filteredEvents.length===0}\n        <box padding={3} align=\"center\" gap={2}>\n          <icon name=\"search-x\" size=\"lg\" color=\"tertiary\"/>\n          <text size=\"sm\" color=\"secondary\">没有符合当前筛选条件的记录</text>\n        </box>\n      {/if}\n    </box>\n    {#if selectedEvent}\n      <box border radius=\"lg\" padding={3} gap={3}>\n        <row align=\"center\" justify=\"between\">\n          <box gap={1}>\n            **事件详情**\n            <text color=\"secondary\" size=\"xs\">{selectedEvent.id}</text>\n          </box>\n          <text color={selectedEvent.risk?\"danger\":\"success\"} size=\"xs\" weight=\"medium\">{selectedEvent.risk?\"需要关注\":\"正常记录\"}</text>\n        </row>\n        <table>\n          {#each [{k:\"User ID\",v:selectedEvent.user},{k:\"支付渠道\",v:selectedEvent.gateway},{k:\"处理状态\",v:statusText[selectedEvent.status]},{k:\"Credits 变动\",v:String(selectedEvent.amount)},{k:\"事件时间\",v:selectedEvent.time},{k:\"Trace ID\",v:selectedEvent.trace}] as field}\n            <table-row>\n              <table-cell width=\"37%\"><text color=\"secondary\" size=\"sm\">{field.k}</text></table-cell>\n              <table-cell><text size=\"sm\">{field.v}</text></table-cell>\n            </table-row>\n          {/each}\n        </table>\n        <box background=\"surface-secondary\" padding={3} radius=\"md\" gap={2}>\n          <row gap={2} align=\"center\">\n            <icon name=\"file-search\" color=\"secondary\"/>\n            **诊断信息**\n          </row>\n          <text size=\"sm\">{selectedEvent.note}</text>\n        </box>\n        <row gap={2} wrap=\"wrap\">\n          <button size=\"md\" block color=\"secondary\" variant=\"outline\" onClick={()=>GenUI.copy(selectedEvent.trace)}><icon name=\"copy\" inline/> 复制 Trace ID</button>\n        </row>\n      </box>\n    {/if}\n    <box background=\"surface-secondary\" radius=\"lg\" padding={3} gap={2}>\n      <row align=\"center\" gap={2}>\n        <icon name=\"workflow\" color=\"secondary\"/>\n        **模拟审计链路**\n      </row>\n      <box gap={2} align=\"center\">\n        <box border background=\"surface\" radius=\"md\" padding={2} width=\"100%\" align=\"center\">\n          <text size=\"sm\" weight=\"medium\">Provider Webhook / Usage Event</text>\n        </box>\n        <icon name=\"arrow-down\" color=\"tertiary\"/>\n        <box border background=\"surface\" radius=\"md\" padding={2} width=\"100%\" align=\"center\">\n          <text size=\"sm\" weight=\"medium\">Inbox → Idempotency → Ledger</text>\n        </box>\n        <icon name=\"arrow-down\" color=\"tertiary\"/>\n        <box border background=\"surface\" radius=\"md\" padding={2} width=\"100%\" align=\"center\">\n          <text size=\"sm\" weight=\"medium\">Entitlement → Reconciliation</text>\n        </box>\n      </box>\n    </box>\n  {/if}\n  <divider color=\"subtle\"/>\n  <row justify=\"between\" align=\"center\" gap={2}>\n    <text color=\"secondary\" size=\"xs\">Interactive demo · 所有状态仅存在于本次界面</text>\n    <button size=\"xs\" color=\"secondary\" variant=\"ghost\" onClick={()=>{setTab(\"overview\");setPeriod(\"7\");setChannel(\"all\");setIncident(false);setModel(\"balanced\");setTurns(8000);setRetry(5);setRewards(15);setWallet(250);setLedger([]);setMessage(\"\");setSearch(\"\");setStatusFilter(\"all\");setRiskOnly(false);setSelectedAudit(\"EVT-1042\")}}><icon name=\"refresh-cw\" inline/> 全部重置</button>\n  </row>\n</box>\n\n## 这个示例体现了什么？\n\n它不只是把图表和表单拼在一起。你可以尝试三个操作：\n\n1. **在运营总览注入重试风暴**：模型成本、成功率、延迟、对账率和审计事件会联动更新。\n2. **在计费沙盒调整参数并试扣**：每轮 Credits 扣费、毛利预测、钱包余额与 Ledger 流水会产生对应变化。\n3. **在交易审计中筛选异常**：搜索事件，查看诊断原因，复制关联的 Trace ID。\n\n这里最值得注意的是：**界面的结构、交互控件、状态关系和数据可视化由我在回答中定义，ChatGPT 客户端负责渲染和执行支持的交互。**\n\n它已经具备一个轻量交互式应用的体验，但尚不具备真正的服务端业务能力，例如数据库持久化、支付 API 调用和真实异步事件处理。\n\n这也是 Intelligent UI 与传统 Markdown 回复的重要区别：它能够让一份回答从静态信息展示，升级为**可操作、可探索、可验证假设的交互式工作空间**。<MemoryCite />"
+     ]
+    },
+    "status": "finished_successfully",
+    "end_turn": true,
+    "weight": 1.0,
+    "metadata": {
+     "finish_details": {
+      "type": "stop",
+      "stop_tokens": [
+       200002
+      ]
+     },
+     "is_complete": true,
+     "citations": [],
+     "content_references": [
+      {
+       "type": "client_defined_widget",
+       "category": "visualization",
+       "data": {
+        "content": {},
+        "language": "recharts-json",
+        "widget_type": "charts_widget_v2"
+       },
+       "matched_text": "",
+       "start_idx": 0,
+       "end_idx": 0,
+       "safe_urls": [],
+       "refs": [],
+       "alt": null,
+       "prompt_text": null
+      }
+     ],
+     "model_dil_v2": {
+      "code": "function __dilSafe(evaluate,failureValue){try{return evaluate()}catch{return failureValue}}\n\nfunction DilChartContentPropShim({content=undefined,fallback=null,children}){const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});const c = __dilSafe(()=>(content ?? {}),undefined);\nconst validData = __dilSafe(()=>(Array.isArray(c.data) && c.data.every(row => row && typeof row === \"object\" && !Array.isArray(row))),undefined);\nconst data = __dilSafe(()=>(validData ? c.data : []),undefined);\nconst valid = __dilSafe(()=>([\"bar\", \"line\", \"pie\", \"scatter\"].includes(c.chartType) && validData),undefined);\nconst rawSeries = __dilSafe(()=>(Array.isArray(c.series) ? c.series.filter(s => s && typeof s.dataKey === \"string\") : []),undefined);\nconst sources = __dilSafe(()=>(rawSeries.length ? rawSeries : [{dataKey: \"value\"}]),undefined);\nconst series = __dilSafe(()=>(sources.map(s => ({\n  type: c.chartType, dataKey: s.dataKey, label: s.label ?? s.dataKey,\n  stack: s.stack, curveType: \"linear\",\n  valueFormat: s.valueFormat, valuePrefix: s.valuePrefix, valueSuffix: s.valueSuffix\n}))),undefined);\nconst xKey = __dilSafe(()=>(typeof c.xKey === \"string\" ? c.xKey : \"name\"),undefined);\nconst vertical = __dilSafe(()=>(c.chartType === \"bar\" && c.layout === \"vertical\"),undefined);\nconst numericXAxis = __dilSafe(()=>(c.chartType === \"scatter\" ||\n  (c.chartType === \"line\" && c.xAxisScale === \"linear\" &&\n   data.every(row => typeof row[xKey] === \"number\" && Number.isFinite(row[xKey])))),undefined);\nconst min = __dilSafe(()=>(typeof c.yAxisMin === \"number\" && Number.isFinite(c.yAxisMin) ? c.yAxisMin : undefined),undefined);\nconst max = __dilSafe(()=>(typeof c.yAxisMax === \"number\" && Number.isFinite(c.yAxisMax) ? c.yAxisMax : undefined),undefined);\nconst bounded = __dilSafe(()=>((min !== undefined || max !== undefined) &&\n  (min === undefined || max === undefined || min < max)),undefined);\nconst yAxis = __dilSafe(()=>(bounded ? {\n  domain: [min ?? \"auto\", max ?? \"auto\"],\n  ticks: min !== undefined && max !== undefined\n    ? [min, min+(max-min)/4, min+(max-min)/2, min+3*(max-min)/4, max] : undefined\n} : undefined),undefined);\nconst pieKey = __dilSafe(()=>(typeof c.valueKey === \"string\" ? c.valueKey : \"value\"),undefined);\nconst pieSource = __dilSafe(()=>(rawSeries[0] ?? {}),undefined);\nconst pieSeries = __dilSafe(()=>([{\n  dataKey: pieKey, label: pieSource.label ?? pieKey,\n  valueFormat: pieSource.valueFormat, valuePrefix: pieSource.valuePrefix,\n  valueSuffix: pieSource.valueSuffix\n}]),undefined);\nreturn (__dilSafe(()=>(valid),false))?__dil.jsx(\"card\",{\"gap\":3},(__dilSafe(()=>(typeof c.meta?.title === \"string\"),false))?__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"sm\"},c.meta.title)),null):null,(__dilSafe(()=>(typeof c.meta?.description === \"string\"),false))?__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\",\"color\":\"secondary\"},c.meta.description)),null):null,(__dilSafe(()=>(c.chartType === \"pie\"),false))?__dilSafe(()=>(__dil.jsx(\"pie-chart\",{\"data\":data,\"series\":pieSeries,\"xAxis\":typeof c.nameKey === \"string\" ? c.nameKey : xKey,\"height\":280})),null):__dil.jsx(__dil.Fragment,null,(__dilSafe(()=>(typeof rawSeries[0]?.axisLabel === \"string\"),false))?__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\",\"color\":\"secondary\"},rawSeries[0].axisLabel)),null):null,__dilSafe(()=>(__dil.jsx(\"chart\",{\"data\":data,\"series\":series,\"xAxis\":{dataKey:xKey,type:numericXAxis?\"number\":\"category\",domain:c.chartType===\"line\"&&numericXAxis?[\"dataMin\",\"dataMax\"]:undefined,interval:vertical?0:\"preserveEnd\"},\"yAxis\":yAxis,\"layout\":vertical?\"vertical\":\"horizontal\",\"height\":vertical&&data.length>9?64+data.length*24:280,\"showDots\":c.chartType===\"line\"&&data.length<=40,\"showYAxis\":true})),null),(__dilSafe(()=>(typeof c.xAxisLabel === \"string\"),false))?__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\",\"color\":\"secondary\",\"textAlign\":\"center\"},c.xAxisLabel)),null):null),(__dilSafe(()=>(typeof c.meta?.footer === \"string\"),false))?__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\",\"color\":\"tertiary\"},c.meta.footer)),null):null):__dilSafe(()=>(fallback),null);}\n\nDIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});const [tab,setTab] = DIL.useState(\"overview\",{key:\"tab\"})\nconst [period,setPeriod] = DIL.useState(\"7\",{key:\"period\"})\nconst [channel,setChannel] = DIL.useState(\"all\",{key:\"channel\"})\nconst [incident,setIncident] = DIL.useState(false,{key:\"incident\"})\nconst [model,setModel] = DIL.useState(\"balanced\",{key:\"model\"})\nconst [turns,setTurns] = DIL.useState(8000,{key:\"turns\"})\nconst [retry,setRetry] = DIL.useState(5,{key:\"retry\"})\nconst [rewards,setRewards] = DIL.useState(15,{key:\"rewards\"})\nconst [wallet,setWallet] = DIL.useState(250,{key:\"wallet\"})\nconst [ledger,setLedger] = DIL.useState([],{key:\"ledger\"})\nconst [message,setMessage] = DIL.useState(\"\",{key:\"message\"})\nconst [search,setSearch] = DIL.useState(\"\",{key:\"search\"})\nconst [statusFilter,setStatusFilter] = DIL.useState(\"all\",{key:\"statusFilter\"})\nconst [riskOnly,setRiskOnly] = DIL.useState(false,{key:\"riskOnly\"})\nconst [selectedAudit,setSelectedAudit] = DIL.useState(\"EVT-1042\",{key:\"selectedAudit\"})\nconst money = __dilSafe(()=>((v) => \"$\"+Number(v).toLocaleString(\"en-US\",{minimumFractionDigits:2,maximumFractionDigits:2})),undefined)\nconst number = __dilSafe(()=>((v) => Math.round(v).toLocaleString(\"en-US\")),undefined)\nconst channelFactor = __dilSafe(()=>({all:1,web:0.52,ios:0.31,android:0.17}[channel]),undefined)\nconst n = __dilSafe(()=>(period===\"7\"?7:period===\"30\"?10:12),undefined)\nconst step = __dilSafe(()=>(Number(period)/n),undefined)\nconst swings = __dilSafe(()=>([-3,2,-1,3,0,4,-2,1,3,-1,2,4]),undefined)\nconst trendData = __dilSafe(()=>(Array.from({length:n},(_,i)=>({period:period===\"7\"?\"D-\"+(n-1-i):period===\"30\"?\"P\"+(i+1):\"W\"+(i+1),revenue:Math.round((2700+swings[i]*93)*step*channelFactor),cost:Math.round((960+swings[i]*29)*step*channelFactor*(incident&&i>=n-2?1.75:1))}))),undefined)\nconst totalRevenue=__dilSafe(()=>(trendData.reduce((a,b)=>a+b.revenue,0)),undefined)\nconst totalCost=__dilSafe(()=>(trendData.reduce((a,b)=>a+b.cost,0)),undefined)\nconst marginPct=__dilSafe(()=>((totalRevenue-totalCost)/totalRevenue*100),undefined)\nconst rates=__dilSafe(()=>({fast:0.006,balanced:0.020,premium:0.055}),undefined)\nconst modelLabels=__dilSafe(()=>({fast:\"Fast\",balanced:\"Balanced\",premium:\"Premium\"}),undefined)\nconst unitCost=__dilSafe(()=>(rates[model]*(1+retry/100)),undefined)\nconst creditsPerTurn=__dilSafe(()=>(Number((unitCost*1000).toFixed(2))),undefined)\nconst scenarioCost=__dilSafe(()=>(turns*unitCost),undefined)\nconst scenarioRevenue=__dilSafe(()=>(turns*creditsPerTurn*0.004*(1-rewards/100)),undefined)\nconst scenarioProfit=__dilSafe(()=>(scenarioRevenue-scenarioCost),undefined)\nconst scenarioMargin=__dilSafe(()=>(scenarioRevenue>0?100*scenarioProfit/scenarioRevenue:0),undefined)\nconst mockEvents=__dilSafe(()=>([{id:\"EVT-1042\",user:\"user_4821\",gateway:\"PayCo\",status:\"pending\",amount:120,time:\"14:02:11\",risk:true,note:\"支付渠道已返回成功，权益发放事件尚未确认\",trace:\"trace-b7e2-1042\"},{id:\"EVT-1041\",user:\"user_1209\",gateway:\"App Store\",status:\"success\",amount:3200,time:\"13:59:48\",risk:false,note:\"订阅续期已完成，Credits 已到账\",trace:\"trace-a3c1-1041\"},{id:\"EVT-1040\",user:\"user_8812\",gateway:\"Google Play\",status:\"refunded\",amount:-500,time:\"13:55:16\",risk:false,note:\"退款完成，对应权益已冲正\",trace:\"trace-e8d1-1040\"},{id:\"EVT-1039\",user:\"user_2290\",gateway:\"PayCo\",status:\"failed\",amount:800,time:\"13:51:22\",risk:true,note:\"Webhook 签名校验失败，未写入钱包账本\",trace:\"trace-a8f0-1039\"},{id:\"EVT-1038\",user:\"user_1002\",gateway:\"Internal\",status:\"success\",amount:-20,time:\"13:50:08\",risk:false,note:\"LLM 调用完成，幂等扣费成功\",trace:\"trace-f3c4-1038\"},{id:\"EVT-1037\",user:\"user_9082\",gateway:\"Internal\",status:\"success\",amount:100,time:\"13:48:36\",risk:false,note:\"新用户邀请奖励发放\",trace:\"trace-c1f8-1037\"}]),undefined)\nconst events = __dilSafe(()=>(incident?[{id:\"EVT-1050\",user:\"user_4411\",gateway:\"Internal\",status:\"pending\",amount:-44,time:\"14:04:10\",risk:true,note:\"模拟重试风暴：模型调用重复产生 Usage Event，等待幂等检查\",trace:\"trace-incident-1050\"},...mockEvents]:mockEvents),undefined)\nconst filteredEvents=__dilSafe(()=>(events.filter(e=>(statusFilter===\"all\"||e.status===statusFilter)&&(!riskOnly||e.risk)&&[e.id,e.user,e.gateway,e.trace].join(\" \").toLowerCase().includes(search.toLowerCase()))),undefined)\nconst selectedEvent=__dilSafe(()=>(events.find(e=>e.id===selectedAudit)),undefined)\nconst statusText=__dilSafe(()=>({success:\"已完成\",pending:\"待处理\",failed:\"失败\",refunded:\"已退款\"}),undefined)\nfunction chargeOnce(){if(wallet<creditsPerTurn){setMessage(\"余额不足：无法完成本次试扣\");return}const next=Number((wallet-creditsPerTurn).toFixed(2));setWallet(next);setLedger([{id:Date.now(),action:\"模型推理扣费\",delta:-creditsPerTurn,balance:next},...ledger].slice(0,7));setMessage(\"试扣成功：已写入模拟 Ledger\")}\nfunction recharge(){const next=Number((wallet+500).toFixed(2));setWallet(next);setLedger([{id:Date.now(),action:\"模拟充值\",delta:500,balance:next},...ledger].slice(0,7));setMessage(\"充值成功：已增加 500 Credits\")}\nreturn __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"],__dil.jsx(\"bold\",null,__dilConstants[\"1\"]),__dilConstants[\"2\"]),__dil.jsx(\"box\",{\"border\":true,\"radius\":\"2xl\",\"padding\":3,\"gap\":4},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\",\"wrap\":\"wrap\"},__dil.jsx(\"row\",{\"align\":\"center\",\"gap\":2},__dil.jsx(\"box\",{\"background\":\"surface-secondary\",\"padding\":2,\"radius\":\"lg\"},__dil.jsx(\"icon\",{\"name\":\"layers-3\",\"size\":\"lg\"})),__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"title\",{\"size\":\"lg\"},__dilConstants[\"3\"]),__dil.jsx(\"caption\",null,__dilConstants[\"4\"]))),__dil.jsx(\"row\",{\"align\":\"center\",\"gap\":2},__dilSafe(()=>(__dil.jsx(\"badge\",{\"color\":incident?\"warning\":\"success\"},incident?\"演练异常\":\"系统正常\")),null),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"5\"]))),__dilSafe(()=>(__dil.jsx(\"segmented-control\",{\"block\":true,\"size\":\"lg\",\"value\":tab,\"onChange\":setTab,\"options\":__dilConstants[\"6\"]})),null),(__dilSafe(()=>(tab===\"overview\"),false))?__dil.jsx(__dil.Fragment,null,__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\",\"wrap\":\"wrap\"},__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"title\",{\"size\":\"lg\"},__dilConstants[\"7\"]),__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"8\"])),__dil.jsx(\"row\",{\"gap\":2,\"wrap\":\"wrap\"},__dilSafe(()=>(__dil.jsx(\"select\",{\"size\":\"md\",\"value\":channel,\"onChange\":setChannel,\"options\":__dilConstants[\"9\"]})),null),__dilSafe(()=>(__dil.jsx(\"segmented-control\",{\"size\":\"md\",\"value\":period,\"onChange\":setPeriod,\"options\":__dilConstants[\"10\"]})),null))),__dil.jsx(\"grid\",{\"columns\":2,\"gap\":2},__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"11\"]),__dil.jsx(\"icon\",{\"name\":\"wallet\",\"color\":\"secondary\"})),__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"xl\",\"color\":\"default\",\"tabularNums\":true},money(totalRevenue))),null),__dil.jsx(\"text\",{\"color\":\"success\",\"size\":\"xs\"},__dil.jsx(\"icon\",{\"name\":\"trending-up\",\"inline\":true}),__dilConstants[\"12\"]))),__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"13\"]),__dil.jsx(\"icon\",{\"name\":\"cpu\",\"color\":\"secondary\"})),__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"xl\",\"tabularNums\":true},money(totalCost))),null),__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":incident?\"danger\":\"secondary\",\"size\":\"xs\"},incident?\"重试风暴增加成本\":\"占比 \"+(100*totalCost/totalRevenue).toFixed(1)+\"%\")),null))),__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"14\"]),__dil.jsx(\"icon\",{\"name\":\"chart-no-axes-combined\",\"color\":\"secondary\"})),__dil.jsx(\"title\",{\"size\":\"xl\",\"tabularNums\":true},__dilSafe(()=>(marginPct.toFixed(1)),null),__dilConstants[\"15\"]),__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"16\"]))),__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"17\"]),__dil.jsx(\"icon\",{\"name\":\"activity\",\"color\":\"secondary\"})),__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"xl\",\"tabularNums\":true},incident?\"97.30%\":\"99.52%\")),null),__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":incident?\"danger\":\"success\",\"size\":\"xs\"},incident?\"低于 99% 阈值\":\"高于 99% 阈值\")),null)))),__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"18\"])),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"19\"])),__dil.jsx(\"icon\",{\"name\":\"chart-line\",\"color\":\"secondary\"})),__dilSafe(()=>(__dil.jsx(DilChartContentPropShim,{\"content\":__dilSafe(()=>({\"chartType\":\"line\",\"xKey\":\"period\",\"series\":[{\"dataKey\":\"revenue\",\"label\":\"收入\",\"valuePrefix\":\"$\"},{\"dataKey\":\"cost\",\"label\":\"模型成本\",\"valuePrefix\":\"$\"}],\"data\":trendData}),void 0)})),null)),__dil.jsx(\"grid\",{\"columns\":2,\"gap\":2},__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"20\"])),__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"21\"]),__dilSafe(()=>(__dil.jsx(DilChartContentPropShim,{\"content\":__dilSafe(()=>({\"chartType\":\"bar\",\"xKey\":\"name\",\"series\":[{\"dataKey\":\"value\",\"label\":\"营收\",\"valuePrefix\":\"$\"}],\"data\":[{\"name\":\"Web\",\"value\":Math.round(2700*Number(period)*0.52)},{\"name\":\"iOS\",\"value\":Math.round(2700*Number(period)*0.31)},{\"name\":\"Android\",\"value\":Math.round(2700*Number(period)*0.17)}]}),void 0)})),null))),__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":3},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"22\"])),__dil.jsx(\"box\",{\"gap\":3},__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"row\",{\"justify\":\"between\"},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"23\"]),__dilSafe(()=>(__dil.jsx(\"text\",{\"weight\":\"medium\",\"size\":\"xs\"},incident?\"8.2 s\":\"148 ms\")),null)),__dil.jsx(\"box\",{\"background\":\"surface-tertiary\",\"height\":\"6px\",\"radius\":\"full\",\"clip\":true},__dilSafe(()=>(__dil.jsx(\"box\",{\"background\":incident?\"#E58A42\":\"#16A085\",\"width\":incident?\"92%\":\"14%\",\"height\":\"100%\",\"radius\":\"full\"})),null))),__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"row\",{\"justify\":\"between\"},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"24\"]),__dilSafe(()=>(__dil.jsx(\"text\",{\"weight\":\"medium\",\"size\":\"xs\"},incident?\"97.1%\":\"99.98%\")),null)),__dil.jsx(\"box\",{\"background\":\"surface-tertiary\",\"height\":\"6px\",\"radius\":\"full\",\"clip\":true},__dilSafe(()=>(__dil.jsx(\"box\",{\"background\":incident?\"#E58A42\":\"#16A085\",\"width\":incident?\"85%\":\"99.98%\",\"height\":\"100%\",\"radius\":\"full\"})),null))),__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"row\",{\"justify\":\"between\"},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"25\"]),__dilSafe(()=>(__dil.jsx(\"text\",{\"weight\":\"medium\",\"size\":\"xs\"},incident?\"94.0%\":\"99.99%\")),null)),__dil.jsx(\"box\",{\"background\":\"surface-tertiary\",\"height\":\"6px\",\"radius\":\"full\",\"clip\":true},__dilSafe(()=>(__dil.jsx(\"box\",{\"background\":incident?\"#E58A42\":\"#16A085\",\"width\":incident?\"80%\":\"99.99%\",\"height\":\"100%\",\"radius\":\"full\"})),null)))),__dilSafe(()=>(__dil.jsx(\"button\",{\"size\":\"sm\",\"color\":\"secondary\",\"variant\":\"outline\",\"block\":true,\"onClick\":()=>setTab(\"audit\")},__dilConstants[\"26\"],__dil.jsx(\"icon\",{\"name\":\"arrow-right\",\"inline\":true}))),null)))),__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":3},__dil.jsx(\"row\",{\"align\":\"start\",\"justify\":\"between\",\"gap\":3},__dil.jsx(\"row\",{\"align\":\"start\",\"gap\":2},__dilSafe(()=>(__dil.jsx(\"icon\",{\"name\":incident?\"alert-triangle\":\"shield-check\",\"color\":incident?\"danger\":\"success\",\"size\":\"lg\"})),null),__dil.jsx(\"box\",{\"flex\":\"1\",\"gap\":1},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"27\"])),__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"sm\"},incident?\"已注入模拟的 LLM 重试风暴。模型成本、成功率、延迟、对账率和审计事件均已变化。\":\"模拟 AI 请求链路出现重试风暴，观察多个业务组件如何同步响应。\")),null)))),__dilSafe(()=>(__dil.jsx(\"button\",{\"block\":true,\"color\":incident?\"secondary\":\"primary\",\"variant\":incident?\"outline\":\"solid\",\"onClick\":()=>setIncident(!incident)},__dilSafe(()=>(__dil.jsx(\"icon\",{\"name\":incident?\"rotate-ccw\":\"zap\",\"inline\":true})),null),__dilSafe(()=>(incident?\"结束演练并恢复指标\":\"注入重试风暴\"),null))),null))):(__dilSafe(()=>(tab===\"sandbox\"),false))?__dil.jsx(__dil.Fragment,null,__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"title\",{\"size\":\"lg\"},__dilConstants[\"28\"]),__dil.jsx(\"text\",{\"size\":\"sm\",\"color\":\"secondary\"},__dilConstants[\"29\"])),__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":3},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"30\"])),__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"label\",null,__dilConstants[\"31\"]),__dilSafe(()=>(__dil.jsx(\"radio-group\",{\"direction\":\"col\",\"value\":model,\"onChange\":setModel},__dil.jsx(\"radio\",{\"value\":\"fast\"},__dil.jsx(\"row\",{\"justify\":\"between\",\"align\":\"center\"},__dil.jsx(\"text\",null,__dilConstants[\"32\"]),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"sm\"},__dilConstants[\"33\"]))),__dil.jsx(\"radio\",{\"value\":\"balanced\"},__dil.jsx(\"row\",{\"justify\":\"between\",\"align\":\"center\"},__dil.jsx(\"text\",null,__dilConstants[\"34\"]),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"sm\"},__dilConstants[\"35\"]))),__dil.jsx(\"radio\",{\"value\":\"premium\"},__dil.jsx(\"row\",{\"justify\":\"between\",\"align\":\"center\"},__dil.jsx(\"text\",null,__dilConstants[\"36\"]),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"sm\"},__dilConstants[\"37\"]))))),null)),__dil.jsx(\"divider\",{\"color\":\"subtle\"}),__dil.jsx(\"box\",{\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"label\",null,__dilConstants[\"38\"]),__dilSafe(()=>(__dil.jsx(\"text\",{\"weight\":\"medium\",\"tabularNums\":true},number(turns))),null)),__dilSafe(()=>(__dil.jsx(\"slider\",{\"min\":1000,\"max\":50000,\"step\":1000,\"value\":turns,\"onChange\":setTurns})),null),__dil.jsx(\"row\",{\"justify\":\"between\"},__dil.jsx(\"caption\",null,__dilConstants[\"39\"]),__dil.jsx(\"caption\",null,__dilConstants[\"40\"]))),__dil.jsx(\"box\",{\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"label\",null,__dilConstants[\"41\"]),__dil.jsx(\"text\",{\"weight\":\"medium\",\"tabularNums\":true},__dilSafe(()=>(retry),null),__dilConstants[\"42\"])),__dilSafe(()=>(__dil.jsx(\"slider\",{\"min\":0,\"max\":40,\"step\":1,\"value\":retry,\"onChange\":setRetry})),null)),__dil.jsx(\"box\",{\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"label\",null,__dilConstants[\"43\"]),__dil.jsx(\"text\",{\"weight\":\"medium\",\"tabularNums\":true},__dilSafe(()=>(rewards),null),__dilConstants[\"44\"])),__dilSafe(()=>(__dil.jsx(\"slider\",{\"min\":0,\"max\":60,\"step\":5,\"value\":rewards,\"onChange\":setRewards})),null),__dil.jsx(\"caption\",null,__dilConstants[\"45\"]))),__dil.jsx(\"grid\",{\"columns\":2,\"gap\":2},__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":1},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"46\"]),__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"xl\",\"tabularNums\":true},creditsPerTurn)),null),__dil.jsx(\"caption\",null,__dilConstants[\"47\"]))),__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":1},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"48\"]),__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"xl\",\"tabularNums\":true},money(scenarioCost))),null),__dil.jsx(\"caption\",null,__dilConstants[\"49\"]))),__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":1},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"50\"]),__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"xl\",\"tabularNums\":true},money(scenarioRevenue))),null),__dil.jsx(\"caption\",null,__dilConstants[\"51\"]))),__dil.jsx(\"grid-item\",null,__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":1},__dil.jsx(\"text\",{\"size\":\"xs\",\"color\":\"secondary\"},__dilConstants[\"52\"]),__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"xl\",\"color\":scenarioMargin<0?\"danger\":\"default\",\"tabularNums\":true},__dilSafe(()=>(scenarioMargin.toFixed(1)),null),__dilConstants[\"53\"])),null),__dil.jsx(\"caption\",null,__dilConstants[\"54\"])))),__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"55\"])),__dilSafe(()=>(__dil.jsx(DilChartContentPropShim,{\"content\":__dilSafe(()=>({\"chartType\":\"bar\",\"xKey\":\"item\",\"series\":[{\"dataKey\":\"value\",\"label\":\"USD\",\"valuePrefix\":\"$\"}],\"data\":[{\"item\":\"模拟收入\",\"value\":Math.round(scenarioRevenue)},{\"item\":\"模型成本\",\"value\":Math.round(scenarioCost)},{\"item\":\"贡献毛利\",\"value\":Math.round(scenarioProfit)}]}),void 0)})),null),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"56\"])),__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":3},__dil.jsx(\"row\",{\"justify\":\"between\",\"align\":\"center\"},__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"57\"])),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"58\"])),__dil.jsx(\"icon\",{\"name\":\"database\",\"color\":\"secondary\"})),__dil.jsx(\"box\",{\"background\":\"surface-secondary\",\"radius\":\"lg\",\"padding\":3,\"gap\":1},__dil.jsx(\"caption\",null,__dilConstants[\"59\"]),__dil.jsx(\"row\",{\"align\":\"baseline\",\"gap\":2},__dilSafe(()=>(__dil.jsx(\"title\",{\"size\":\"2xl\",\"tabularNums\":true},wallet.toFixed(2))),null),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"sm\"},__dilConstants[\"60\"])),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"61\"],__dilSafe(()=>(creditsPerTurn.toFixed(2)),null),__dilConstants[\"62\"])),__dil.jsx(\"row\",{\"gap\":2},__dil.jsx(\"box\",{\"flex\":\"1\"},__dilSafe(()=>(__dil.jsx(\"button\",{\"block\":true,\"onClick\":chargeOnce},__dil.jsx(\"icon\",{\"name\":\"minus-circle\",\"inline\":true}),__dilConstants[\"63\"])),null)),__dil.jsx(\"box\",{\"flex\":\"1\"},__dilSafe(()=>(__dil.jsx(\"button\",{\"block\":true,\"color\":\"secondary\",\"variant\":\"outline\",\"onClick\":recharge},__dil.jsx(\"icon\",{\"name\":\"plus-circle\",\"inline\":true}),__dilConstants[\"64\"])),null))),(__dilSafe(()=>(message!==\"\"),false))?__dil.jsx(\"row\",{\"align\":\"center\",\"gap\":2},__dil.jsx(\"icon\",{\"name\":\"info\",\"color\":\"secondary\"}),__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\"},message)),null)):null,__dil.jsx(\"divider\",{\"color\":\"subtle\"}),__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"65\"])),__dilSafe(()=>(__dil.jsx(\"button\",{\"size\":\"xs\",\"color\":\"secondary\",\"variant\":\"ghost\",\"onClick\":()=>{setWallet(250);setLedger([]);setMessage(\"模拟钱包已重置\")}},__dilConstants[\"66\"])),null)),(__dilSafe(()=>(ledger.length===0),false))?__dil.jsx(\"box\",{\"padding\":4,\"align\":\"center\",\"gap\":2},__dil.jsx(\"icon\",{\"name\":\"receipt-text\",\"size\":\"xl\",\"color\":\"tertiary\"}),__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"sm\"},__dilConstants[\"67\"])):__dil.jsx(\"table\",null,__dil.jsx(\"table-row\",null,__dil.jsx(\"table-cell\",{\"width\":\"45%\"},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"68\"])),__dil.jsx(\"table-cell\",{\"align\":\"end\"},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"69\"])),__dil.jsx(\"table-cell\",{\"align\":\"end\"},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"70\"]))),__dilSafe(()=>((ledger).map((item)=>__dilSafe(()=>(__dil.jsx(\"table-row\",null,__dil.jsx(\"table-cell\",null,__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\"},item.action)),null)),__dil.jsx(\"table-cell\",{\"align\":\"end\"},__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":item.delta>0?\"success\":\"default\",\"tabularNums\":true},__dilSafe(()=>(item.delta>0?\"+\":\"\"),null),__dilSafe(()=>(item.delta.toFixed(2)),null))),null)),__dil.jsx(\"table-cell\",{\"align\":\"end\"},__dilSafe(()=>(__dil.jsx(\"text\",{\"tabularNums\":true},item.balance.toFixed(2))),null)))),null))),[])))):__dil.jsx(__dil.Fragment,null,__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"title\",{\"size\":\"lg\"},__dilConstants[\"71\"]),__dil.jsx(\"text\",{\"size\":\"sm\",\"color\":\"secondary\"},__dilConstants[\"72\"])),__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":3},__dilSafe(()=>(__dil.jsx(\"input\",{\"value\":search,\"onChange\":setSearch,\"placeholder\":__dilConstants[\"73\"]})),null),__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\",\"wrap\":\"wrap\",\"gap\":2},__dilSafe(()=>(__dil.jsx(\"select\",{\"size\":\"md\",\"value\":statusFilter,\"onChange\":setStatusFilter,\"options\":__dilConstants[\"74\"]})),null),__dilSafe(()=>(__dil.jsx(\"checkbox\",{\"checked\":riskOnly,\"onChange\":setRiskOnly,\"lineThrough\":false},__dilConstants[\"75\"])),null)),__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"76\"],__dilSafe(()=>(filteredEvents.length),null),__dilConstants[\"77\"]),__dilSafe(()=>(__dil.jsx(\"button\",{\"variant\":\"ghost\",\"color\":\"secondary\",\"size\":\"xs\",\"onClick\":()=>{setSearch(\"\");setStatusFilter(\"all\");setRiskOnly(false)}},__dil.jsx(\"icon\",{\"name\":\"rotate-ccw\",\"inline\":true}),__dilConstants[\"78\"])),null)),__dil.jsx(\"table\",null,__dil.jsx(\"table-row\",null,__dil.jsx(\"table-cell\",null,__dil.jsx(\"text\",{\"weight\":\"medium\",\"size\":\"xs\"},__dilConstants[\"79\"])),__dil.jsx(\"table-cell\",null,__dil.jsx(\"text\",{\"weight\":\"medium\",\"size\":\"xs\"},__dilConstants[\"80\"])),__dil.jsx(\"table-cell\",{\"align\":\"end\"},__dil.jsx(\"text\",{\"weight\":\"medium\",\"size\":\"xs\"},__dilConstants[\"81\"]))),__dilSafe(()=>((filteredEvents).map((item)=>__dilSafe(()=>(__dil.jsx(\"table-row\",null,__dil.jsx(\"table-cell\",null,__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"row\",{\"align\":\"center\",\"gap\":1},__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\",\"weight\":\"medium\"},item.id)),null),(__dilSafe(()=>(item.risk),false))?__dil.jsx(\"icon\",{\"name\":\"alert-triangle\",\"size\":\"xs\",\"color\":\"danger\"}):null),__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},item.user)),null))),__dil.jsx(\"table-cell\",null,__dil.jsx(\"box\",{\"gap\":1},__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\"},item.gateway)),null),__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":item.status===\"success\"?\"success\":item.status===\"failed\"?\"danger\":item.status===\"pending\"?\"caution\":\"secondary\",\"size\":\"xs\"},statusText[item.status])),null))),__dil.jsx(\"table-cell\",{\"align\":\"end\"},__dilSafe(()=>(__dil.jsx(\"button\",{\"size\":\"xs\",\"color\":selectedAudit===item.id?\"primary\":\"secondary\",\"variant\":selectedAudit===item.id?\"solid\":\"outline\",\"onClick\":()=>setSelectedAudit(item.id)},__dilConstants[\"82\"])),null)))),null))),[])),(__dilSafe(()=>(filteredEvents.length===0),false))?__dil.jsx(\"box\",{\"padding\":3,\"align\":\"center\",\"gap\":2},__dil.jsx(\"icon\",{\"name\":\"search-x\",\"size\":\"lg\",\"color\":\"tertiary\"}),__dil.jsx(\"text\",{\"size\":\"sm\",\"color\":\"secondary\"},__dilConstants[\"83\"])):null),(__dilSafe(()=>(selectedEvent),false))?__dil.jsx(\"box\",{\"border\":true,\"radius\":\"lg\",\"padding\":3,\"gap\":3},__dil.jsx(\"row\",{\"align\":\"center\",\"justify\":\"between\"},__dil.jsx(\"box\",{\"gap\":1},__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"84\"])),__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},selectedEvent.id)),null)),__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":selectedEvent.risk?\"danger\":\"success\",\"size\":\"xs\",\"weight\":\"medium\"},selectedEvent.risk?\"需要关注\":\"正常记录\")),null)),__dil.jsx(\"table\",null,__dilSafe(()=>(([{k:\"User ID\",v:selectedEvent.user},{k:\"支付渠道\",v:selectedEvent.gateway},{k:\"处理状态\",v:statusText[selectedEvent.status]},{k:\"Credits 变动\",v:String(selectedEvent.amount)},{k:\"事件时间\",v:selectedEvent.time},{k:\"Trace ID\",v:selectedEvent.trace}]).map((field)=>__dilSafe(()=>(__dil.jsx(\"table-row\",null,__dil.jsx(\"table-cell\",{\"width\":\"37%\"},__dilSafe(()=>(__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"sm\"},field.k)),null)),__dil.jsx(\"table-cell\",null,__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\"},field.v)),null)))),null))),[])),__dil.jsx(\"box\",{\"background\":\"surface-secondary\",\"padding\":3,\"radius\":\"md\",\"gap\":2},__dil.jsx(\"row\",{\"gap\":2,\"align\":\"center\"},__dil.jsx(\"icon\",{\"name\":\"file-search\",\"color\":\"secondary\"}),__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"85\"]))),__dilSafe(()=>(__dil.jsx(\"text\",{\"size\":\"sm\"},selectedEvent.note)),null)),__dil.jsx(\"row\",{\"gap\":2,\"wrap\":\"wrap\"},__dilSafe(()=>(__dil.jsx(\"button\",{\"size\":\"md\",\"block\":true,\"color\":\"secondary\",\"variant\":\"outline\",\"onClick\":()=>GenUI.copy(selectedEvent.trace)},__dil.jsx(\"icon\",{\"name\":\"copy\",\"inline\":true}),__dilConstants[\"86\"])),null))):null,__dil.jsx(\"box\",{\"background\":\"surface-secondary\",\"radius\":\"lg\",\"padding\":3,\"gap\":2},__dil.jsx(\"row\",{\"align\":\"center\",\"gap\":2},__dil.jsx(\"icon\",{\"name\":\"workflow\",\"color\":\"secondary\"}),__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"87\"]))),__dil.jsx(\"box\",{\"gap\":2,\"align\":\"center\"},__dil.jsx(\"box\",{\"border\":true,\"background\":\"surface\",\"radius\":\"md\",\"padding\":2,\"width\":\"100%\",\"align\":\"center\"},__dil.jsx(\"text\",{\"size\":\"sm\",\"weight\":\"medium\"},__dilConstants[\"88\"])),__dil.jsx(\"icon\",{\"name\":\"arrow-down\",\"color\":\"tertiary\"}),__dil.jsx(\"box\",{\"border\":true,\"background\":\"surface\",\"radius\":\"md\",\"padding\":2,\"width\":\"100%\",\"align\":\"center\"},__dil.jsx(\"text\",{\"size\":\"sm\",\"weight\":\"medium\"},__dilConstants[\"89\"])),__dil.jsx(\"icon\",{\"name\":\"arrow-down\",\"color\":\"tertiary\"}),__dil.jsx(\"box\",{\"border\":true,\"background\":\"surface\",\"radius\":\"md\",\"padding\":2,\"width\":\"100%\",\"align\":\"center\"},__dil.jsx(\"text\",{\"size\":\"sm\",\"weight\":\"medium\"},__dilConstants[\"90\"]))))),__dil.jsx(\"divider\",{\"color\":\"subtle\"}),__dil.jsx(\"row\",{\"justify\":\"between\",\"align\":\"center\",\"gap\":2},__dil.jsx(\"text\",{\"color\":\"secondary\",\"size\":\"xs\"},__dilConstants[\"91\"]),__dilSafe(()=>(__dil.jsx(\"button\",{\"size\":\"xs\",\"color\":\"secondary\",\"variant\":\"ghost\",\"onClick\":()=>{setTab(\"overview\");setPeriod(\"7\");setChannel(\"all\");setIncident(false);setModel(\"balanced\");setTurns(8000);setRetry(5);setRewards(15);setWallet(250);setLedger([]);setMessage(\"\");setSearch(\"\");setStatusFilter(\"all\");setRiskOnly(false);setSelectedAudit(\"EVT-1042\")}},__dil.jsx(\"icon\",{\"name\":\"refresh-cw\",\"inline\":true}),__dilConstants[\"92\"])),null))),__dil.jsx(\"title\",{\"size\":\"lg\"},__dilConstants[\"93\"]),__dil.jsx(\"text\",null,__dilConstants[\"94\"]),__dil.jsx(\"list\",{\"marker\":\"number\"},__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"95\"]),__dilConstants[\"96\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"97\"]),__dilConstants[\"98\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"99\"]),__dilConstants[\"100\"]))),__dil.jsx(\"text\",null,__dilConstants[\"101\"],__dil.jsx(\"bold\",null,__dilConstants[\"102\"])),__dil.jsx(\"text\",null,__dilConstants[\"103\"]),__dil.jsx(\"text\",null,__dilConstants[\"104\"],__dil.jsx(\"bold\",null,__dilConstants[\"105\"]),__dilConstants[\"106\"]),__dilSafe(()=>(__dil.jsx(MemoryCite,{\"__resolutionId\":__dilConstants[\"107\"]})),null));},{\"key\":\"body:40\"}));",
+      "constants": {
+       "0": "下面是一个完整的 ",
+       "1": "Intelligent UI 交互实验台",
+       "2": "。它模拟一个 AI 产品的 Billing Control Center，包含三个可切换的工作区。所有数据均为虚构，交互计算在当前界面中完成，不会操作真实数据库或发起支付。",
+       "3": "Acme Billing",
+       "4": "Interactive Control Center · Demo",
+       "5": "Sandbox v1.0",
+       "6": [
+        {
+         "label": "📊 运营总览",
+         "value": "overview"
+        },
+        {
+         "label": "🧪 计费沙盒",
+         "value": "sandbox"
+        },
+        {
+         "label": "🔎 交易审计",
+         "value": "audit"
+        }
+       ],
+       "7": "经营概览",
+       "8": "可交互模拟数据 · 视图间数据联动",
+       "9": [
+        {
+         "value": "all",
+         "label": "全部渠道"
+        },
+        {
+         "value": "web",
+         "label": "Web"
+        },
+        {
+         "value": "ios",
+         "label": "iOS"
+        },
+        {
+         "value": "android",
+         "label": "Android"
+        }
+       ],
+       "10": [
+        {
+         "label": "7 天",
+         "value": "7"
+        },
+        {
+         "label": "30 天",
+         "value": "30"
+        },
+        {
+         "label": "90 天",
+         "value": "90"
+        }
+       ],
+       "11": "模拟净收入",
+       "12": " +12.4% 模拟环比",
+       "13": "模型成本",
+       "14": "模拟贡献毛利率",
+       "15": "%",
+       "16": "不含固定开销与税费",
+       "17": "调用成功率",
+       "18": "营收与推理成本趋势",
+       "19": "按所选时间窗口聚合 · USD",
+       "20": "收入渠道结构",
+       "21": "按渠道分配的模拟收入",
+       "22": "可观测性信号",
+       "23": "Webhook 延迟",
+       "24": "账本对账率",
+       "25": "重复事件抑制率",
+       "26": "检查交易事件 ",
+       "27": "故障注入实验",
+       "28": "🧪 Credits 计费模拟器",
+       "29": "调整推理成本、重试概率和奖励消耗，观察单轮扣费及经营模型的变化。",
+       "30": "推理配置",
+       "31": "推理模型档位",
+       "32": "Fast · 轻量",
+       "33": "$0.006 / 轮",
+       "34": "Balanced · 标准",
+       "35": "$0.020 / 轮",
+       "36": "Premium · 高阶",
+       "37": "$0.055 / 轮",
+       "38": "预计调用轮次",
+       "39": "1,000",
+       "40": "50,000",
+       "41": "额外重试成本比例",
+       "42": "%",
+       "43": "奖励 Credits 消费占比",
+       "44": "%",
+       "45": "用于模拟免费奖励带来的收入稀释，不代表真实会计收入确认方法。",
+       "46": "每轮扣费",
+       "47": "Credits",
+       "48": "预计模型总成本",
+       "49": "USD",
+       "50": "模拟对应收入",
+       "51": "以 $0.004 / Credits 估算",
+       "52": "预计贡献毛利率",
+       "53": "%",
+       "54": "不含支付手续费等",
+       "55": "情景经济模型",
+       "56": "扣费示例使用成本约 $0.001 / Credits 的换算假设。负贡献毛利反映为负值。",
+       "57": "模拟钱包与 Ledger",
+       "58": "执行真实的本地状态变化，而非静态按钮",
+       "59": "当前测试钱包余额",
+       "60": "Credits",
+       "61": "本次扣除 ",
+       "62": " Credits",
+       "63": " 试扣一轮",
+       "64": " 充值 500",
+       "65": "本次模拟流水",
+       "66": "重置",
+       "67": "暂无流水。点击试扣或充值开始。",
+       "68": "事件",
+       "69": "变动",
+       "70": "余额",
+       "71": "🔎 交易事件与审计",
+       "72": "搜索、筛选、异常定位与 Master–Detail 详情视图。",
+       "73": "搜索事件 ID、用户、支付渠道、Trace ID...",
+       "74": [
+        {
+         "value": "all",
+         "label": "全部状态"
+        },
+        {
+         "value": "success",
+         "label": "已完成"
+        },
+        {
+         "value": "pending",
+         "label": "待处理"
+        },
+        {
+         "value": "failed",
+         "label": "失败"
+        },
+        {
+         "value": "refunded",
+         "label": "已退款"
+        }
+       ],
+       "75": "只看异常事件",
+       "76": "筛选得到 ",
+       "77": " 条模拟记录",
+       "78": " 清除筛选",
+       "79": "事件 ID",
+       "80": "渠道 / 状态",
+       "81": "操作",
+       "82": "详情",
+       "83": "没有符合当前筛选条件的记录",
+       "84": "事件详情",
+       "85": "诊断信息",
+       "86": " 复制 Trace ID",
+       "87": "模拟审计链路",
+       "88": "Provider Webhook / Usage Event",
+       "89": "Inbox → Idempotency → Ledger",
+       "90": "Entitlement → Reconciliation",
+       "91": "Interactive demo · 所有状态仅存在于本次界面",
+       "92": " 全部重置",
+       "93": "这个示例体现了什么？",
+       "94": "它不只是把图表和表单拼在一起。你可以尝试三个操作：",
+       "95": "在运营总览注入重试风暴",
+       "96": "：模型成本、成功率、延迟、对账率和审计事件会联动更新。",
+       "97": "在计费沙盒调整参数并试扣",
+       "98": "：每轮 Credits 扣费、毛利预测、钱包余额与 Ledger 流水会产生对应变化。",
+       "99": "在交易审计中筛选异常",
+       "100": "：搜索事件，查看诊断原因，复制关联的 Trace ID。",
+       "101": "这里最值得注意的是：",
+       "102": "界面的结构、交互控件、状态关系和数据可视化由我在回答中定义，ChatGPT 客户端负责渲染和执行支持的交互。",
+       "103": "它已经具备一个轻量交互式应用的体验，但尚不具备真正的服务端业务能力，例如数据库持久化、支付 API 调用和真实异步事件处理。",
+       "104": "这也是 Intelligent UI 与传统 Markdown 回复的重要区别：它能够让一份回答从静态信息展示，升级为",
+       "105": "可操作、可探索、可验证假设的交互式工作空间",
+       "106": "。",
+       "107": "99f2bfbc-1c52-4dd4-a18a-2f35ad4dd765"
+      },
+      "fallbackMarkdown": "下面是一个完整的 **Intelligent UI 交互实验台**。它模拟一个 AI 产品的 Billing Control Center，包含三个可切换的工作区。所有数据均为虚构，交互计算在当前界面中完成，不会操作真实数据库或发起支付。\n\n## Acme Billing\n\nInteractive Control Center · Demo\n\nSandbox v1.0\n\n- 📊 运营总览\n- 🧪 计费沙盒\n- 🔎 交易审计\n当前所选项不可用。\n\n---\n\nInteractive demo · 所有状态仅存在于本次界面 [全部重置]\n\n## 这个示例体现了什么？\n\n它不只是把图表和表单拼在一起。你可以尝试三个操作：\n\n1. **在运营总览注入重试风暴**：模型成本、成功率、延迟、对账率和审计事件会联动更新。\n2. **在计费沙盒调整参数并试扣**：每轮 Credits 扣费、毛利预测、钱包余额与 Ledger 流水会产生对应变化。\n3. **在交易审计中筛选异常**：搜索事件，查看诊断原因，复制关联的 Trace ID。\n\n这里最值得注意的是：**界面的结构、交互控件、状态关系和数据可视化由我在回答中定义，ChatGPT 客户端负责渲染和执行支持的交互。**\n\n它已经具备一个轻量交互式应用的体验，但尚不具备真正的服务端业务能力，例如数据库持久化、支付 API 调用和真实异步事件处理。\n\n这也是 Intelligent UI 与传统 Markdown 回复的重要区别：它能够让一份回答从静态信息展示，升级为**可操作、可探索、可验证假设的交互式工作空间**。",
+      "fallbackMarkdownVersion": 1,
+      "requiredComponents": [
+       "MemoryCite"
+      ],
+      "appData": {
+       "opGenui": {
+        "componentResults": {
+         "99f2bfbc-1c52-4dd4-a18a-2f35ad4dd765": {
+          "status": "resolved",
+          "state": {},
+          "componentName": "MemoryCite"
+         }
+        },
+        "modelDataBindings": {}
+       }
+      }
+     },
+     "view_state": {},
+     "resolved_model_slug": "gpt-6-thinking",
+     "search_result_groups": [],
+     "cot_version": "v5",
+     "conversation_followup_suggestions_eligible": true,
+     "request_id": "4b63a82c-27a6-4326-a8c4-f23bc2bbbeaa",
+     "message_type": "next",
+     "turn_exchange_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "working_turn_id": "d118e8d5-e774-454c-a2ab-19daeb4b5481",
+     "model_slug": "gpt-6-thinking",
+     "default_model_slug": "gpt-6-thinking",
+     "thinking_effort": "extended",
+     "can_save": true,
+     "parent_id": "3366f56f-32b3-45af-ac69-0a4483fbc261",
+     "conversation_context_citation_metadata_status": "marker_only",
+     "model_switcher_deny": []
+    },
+    "recipient": "all",
+    "channel": "final"
+   },
+   "parent": "3366f56f-32b3-45af-ac69-0a4483fbc261",
+   "children": []
+  }
+ },
+ "current_node": "5e9e6e76-eeca-4f19-ab61-5655103f36fe",
+ "context_truncation_continuation": null
+}

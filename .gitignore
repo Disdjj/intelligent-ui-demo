@@ -1,0 +1,8 @@
+node_modules/
+.scratch/
+.playwright-mcp/
+.DS_Store
+*.log
+.env
+.env.*
+scripts/brand-map.json

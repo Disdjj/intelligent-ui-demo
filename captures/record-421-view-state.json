@@ -1,0 +1,336 @@
+{
+ "protocol": "http",
+ "id": 421,
+ "uid": "e353ff2d-3f22-4e62-ac11-c2642f8b7ab9",
+ "url": "https://chatgpt.com/backend-api/conversation/35349ae3-74a0-42ca-a7be-7d278c9655b1/message/5e9e6e76-eeca-4f19-ab61-5655103f36fe/dil/view_state",
+ "address": {
+  "ip": "0.0.0.0",
+  "port": 443
+ },
+ "request": {
+  "method": "POST",
+  "path": "/backend-api/conversation/35349ae3-74a0-42ca-a7be-7d278c9655b1/message/5e9e6e76-eeca-4f19-ab61-5655103f36fe/dil/view_state",
+  "protocol": "h2",
+  "headers": [
+   {
+    "name": "host",
+    "value": "chatgpt.com"
+   },
+   {
+    "name": "content-length",
+    "value": "390"
+   },
+   {
+    "name": "oai-did",
+    "value": "<redacted>"
+   },
+   {
+    "name": "oai-language",
+    "value": "zh-CN"
+   },
+   {
+    "name": "sec-ch-ua-platform",
+    "value": "\"macOS\""
+   },
+   {
+    "name": "authorization",
+    "value": "<redacted>"
+   },
+   {
+    "name": "chatgpt-account-id",
+    "value": "<redacted>"
+   },
+   {
+    "name": "x-oai-mcp-form-version",
+    "value": "2"
+   },
+   {
+    "name": "sec-ch-ua",
+    "value": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\""
+   },
+   {
+    "name": "sec-ch-ua-mobile",
+    "value": "?0"
+   },
+   {
+    "name": "x-openai-codex-window-type",
+    "value": "browser"
+   },
+   {
+    "name": "x-openai-web-frontend",
+    "value": "codex_webview"
+   },
+   {
+    "name": "user-agent",
+    "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/0.0.0.0 Safari/537.36"
+   },
+   {
+    "name": "content-type",
+    "value": "application/json"
+   },
+   {
+    "name": "originator",
+    "value": "Codex Browser"
+   },
+   {
+    "name": "accept",
+    "value": "*/*"
+   },
+   {
+    "name": "origin",
+    "value": "https://chatgpt.com"
+   },
+   {
+    "name": "sec-fetch-site",
+    "value": "same-origin"
+   },
+   {
+    "name": "sec-fetch-mode",
+    "value": "cors"
+   },
+   {
+    "name": "sec-fetch-dest",
+    "value": "empty"
+   },
+   {
+    "name": "referer",
+    "value": "https://chatgpt.com/"
+   },
+   {
+    "name": "accept-encoding",
+    "value": "gzip, deflate, br, zstd"
+   },
+   {
+    "name": "accept-language",
+    "value": "zh-CN,zh;q=0.9,ja;q=0.8"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "cookie",
+    "value": "<redacted>"
+   },
+   {
+    "name": "priority",
+    "value": "u=1, i"
+   }
+  ],
+  "body": {
+   "text": "{\"client_session_id\":\"9d099407-920e-4019-a593-cf9de14d28a1\",\"updates\":[{\"scope\":\"root\",\"state\":{\"tab\":\"overview\",\"period\":\"7\",\"channel\":\"all\",\"incident\":false,\"model\":\"balanced\",\"turns\":8000,\"retry\":5,\"rewards\":15,\"wallet\":250,\"ledger\":[],\"message\":\"\",\"search\":\"\",\"statusFilter\":\"all\",\"riskOnly\":false,\"selectedAudit\":\"EVT-1042\"},\"client_update_id\":\"df05e33c-8559-4ca1-addc-4b116d694f3c\"}]}",
+   "mime": "application/json",
+   "encoding": "utf8"
+  },
+  "scriptLogs": []
+ },
+ "response": {
+  "code": 200,
+  "status": "",
+  "protocol": "h2",
+  "headers": [
+   {
+    "name": "date",
+    "value": "Thu, 08 Oct 2026 06:01:41 GMT"
+   },
+   {
+    "name": "content-type",
+    "value": "application/json"
+   },
+   {
+    "name": "server",
+    "value": "cloudflare"
+   },
+   {
+    "name": "access-control-allow-credentials",
+    "value": "true"
+   },
+   {
+    "name": "access-control-allow-origin",
+    "value": "https://chatgpt.com"
+   },
+   {
+    "name": "vary",
+    "value": "Origin"
+   },
+   {
+    "name": "x-oai-request-id",
+    "value": "ab90e951-f755-454c-aac5-54032d07ab3c"
+   },
+   {
+    "name": "x-build",
+    "value": "61578e889b26"
+   },
+   {
+    "name": "cross-origin-opener-policy",
+    "value": "same-origin-allow-popups"
+   },
+   {
+    "name": "cf-cache-status",
+    "value": "DYNAMIC"
+   },
+   {
+    "name": "strict-transport-security",
+    "value": "max-age=31536000; includeSubDomains; preload"
+   },
+   {
+    "name": "x-content-type-options",
+    "value": "nosniff"
+   },
+   {
+    "name": "report-to",
+    "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MA8wXpv9EmVEMMhIsx9OeZpkeFSNiZTaLzZnIoGtsTyMImfwC4pFmwkpqgMauIqlf5VNDXDSl94qjerdd9gS7Bkd5Qe8TklQx15p5WuFDIICzyX6LALmYvBLMvjcYn2VYcGPzTP1NXTU\"}]}"
+   },
+   {
+    "name": "nel",
+    "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}"
+   },
+   {
+    "name": "referrer-policy",
+    "value": "strict-origin-when-cross-origin"
+   },
+   {
+    "name": "content-encoding",
+    "value": "br"
+   },
+   {
+    "name": "cf-ray",
+    "value": "<redacted>"
+   }
+  ],
+  "body": {
+   "text": "{\"status\":\"success\",\"updated_scopes\":0,\"message_id\":\"5e9e6e76-eeca-4f19-ab61-5655103f36fe\",\"conversation_id\":\"35349ae3-74a0-42ca-a7be-7d278c9655b1\"}",
+   "mime": "application/json",
+   "encoding": "utf8"
+  },
+  "scriptLogs": []
+ }
+}

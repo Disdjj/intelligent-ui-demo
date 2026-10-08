@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Intelligent UI · 沙箱自检</title>
+    <link rel="stylesheet" href="/dil/dil.css" />
+    <style>
+      body { margin: 0; background: var(--dil-bg); }
+      .page { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+      h1 { margin: 0 0 6px; font-size: 24px; letter-spacing: -0.02em; }
+      .sub { margin: 0 0 28px; color: var(--dil-text-secondary); }
+      .summary { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; font-weight: 600; }
+      .summary .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--dil-text-tertiary); }
+      .summary.ok .dot { background: var(--dil-success); }
+      .summary.bad .dot { background: var(--dil-danger); }
+      .checks { list-style: none; margin: 0 0 28px; padding: 0; border: 1px solid var(--dil-border); border-radius: 16px; overflow: hidden; }
+      .checks li { display: flex; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--dil-border); font-size: 14px; }
+      .checks li:last-child { border-bottom: 0; }
+      .checks .mark { flex: 0 0 18px; font-weight: 700; }
+      .checks .pass .mark { color: var(--dil-success); }
+      .checks .fail .mark { color: var(--dil-danger); }
+      .checks small { margin-left: auto; color: var(--dil-text-tertiary); font-size: 12px; }
+      h2 { font-size: 15px; margin: 0 0 10px; }
+      #stage { padding: 20px; border: 1px solid var(--dil-border); border-radius: 20px; margin-bottom: 28px; }
+      pre { margin: 0; padding: 14px 16px; border-radius: 14px; background: var(--dil-sunken); font: 12px/1.6 ui-monospace, Menlo, monospace; white-space: pre-wrap; color: var(--dil-text-secondary); max-height: 360px; overflow: auto; }
+    </style>
+  </head>
+  <body class="dil-root">
+    <main class="page">
+      <h1>沙箱自检</h1>
+      <p class="sub">不走模型，也不走流式：把一份固定程序送进 iframe → Worker 沙箱，逐项检查握手、渲染、事件往返和重编译保留状态。</p>
+      <div class="summary" id="summary"><span class="dot"></span><span>运行中…</span></div>
+      <ul class="checks" id="checks"></ul>
+      <h2>渲染结果</h2>
+      <div id="stage"></div>
+      <h2>协议事件</h2>
+      <pre id="events"></pre>
+    </main>
+
+    <script type="module">
+      import { DilMessageView } from '/dil/message-view.js';
+
+      const checks = [];
+      const errors = [];
+      const events = [];
+      window.addEventListener('error', (e) => errors.push(String(e.message)));
+      window.addEventListener('unhandledrejection', (e) => errors.push('unhandled: ' + String(e.reason)));
+      const check = (name, pass, detail) => checks.push({ name, pass: !!pass, detail });
+      const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+      const SOURCE = [
+        '{@body const [n,setN] = DIL.useState(0)}',
+        '<box border radius="lg" padding={3} gap={3}>',
+        '  <row align="center" justify="between">',
+        '    <title size="lg">counter {n}</title>',
+        '    <badge color={n>=2?"success":"accent"}>n={n}</badge>',
+        '  </row>',
+        '  <button onClick={()=>setN(n+1)}>inc</button>',
+        '  <chart data={[{"label":"a","value":3},{"label":"b","value":7}]}/>',
+        '  {#if n>=2}<text color="success">reached</text>{:else}<text color="secondary">keep going</text>{/if}',
+        '</box>',
+      ].join('\n');
+
+      const stage = document.getElementById('stage');
+      const view = new DilMessageView({
+        container: stage,
+        onError: (e, s) => errors.push(`[${s}] ${e?.message}`),
+        onProtocol: (x) => events.push(`${x.dir} ${x.kind}${x.detail ? ' ' + JSON.stringify(x.detail).slice(0, 120) : ''}`),
+      });
+
+      try {
+        const compiled = await view.loadSource(SOURCE);
+        const frame = document.querySelector('iframe[data-dil-sandbox]');
+        check('沙箱 iframe 完成握手', !!frame);
+        check('iframe 只带 sandbox="allow-scripts"', frame?.getAttribute('sandbox') === 'allow-scripts', frame?.getAttribute('sandbox'));
+        await wait(400);
+
+        check('编译产物包含 DIL.render', compiled.code.includes('DIL.render('));
+        const comps = stage.querySelectorAll('[data-d-component]');
+        check('元素树渲染到 DOM', comps.length > 0, `${comps.length} 个节点`);
+        check('组件全部解析', ['box', 'title', 'button', 'chart'].every((t) => stage.querySelector(`[data-d-component="${t}"]`)));
+        check('柱状图画出 2 根柱子', stage.querySelectorAll('.dil-chart-bar').length === 2);
+        check('条件块走 else 分支', stage.textContent.includes('keep going'));
+
+        const btn = stage.querySelector('[data-d-component="button"]');
+        btn.click();
+        await wait(300);
+        check('点击经沙箱往返', stage.textContent.includes('counter 1'), stage.textContent.slice(0, 60));
+        btn.click();
+        await wait(300);
+        check('条件分支随状态切换', stage.textContent.includes('reached'));
+
+        await view.loadSource(SOURCE.replace('counter {n}', 'value {n}'));
+        await wait(300);
+        check('重编译后状态保留', stage.textContent.includes('value 2'), stage.textContent.slice(0, 60));
+      } catch (e) {
+        errors.push('fatal: ' + (e?.message || e));
+      }
+
+      const failed = checks.filter((c) => !c.pass);
+      const pass = failed.length === 0 && errors.length === 0;
+      const summary = document.getElementById('summary');
+      summary.className = 'summary ' + (pass ? 'ok' : 'bad');
+      summary.lastElementChild.textContent = pass ? `全部通过（${checks.length} 项）` : `${failed.length} 项失败，${errors.length} 个错误`;
+      document.getElementById('checks').innerHTML =
+        checks.map((c) => `<li class="${c.pass ? 'pass' : 'fail'}"><span class="mark">${c.pass ? '✓' : '✕'}</span>${c.name}${c.detail ? `<small>${String(c.detail).replace(/</g, '&lt;')}</small>` : ''}</li>`).join('') +
+        errors.map((e) => `<li class="fail"><span class="mark">!</span>${e.replace(/</g, '&lt;')}</li>`).join('');
+      document.getElementById('events').textContent = events.slice(-60).join('\n');
+      document.title = pass ? 'DIL-DIAG-PASS' : 'DIL-DIAG-FAIL';
+    </script>
+  </body>
+</html>

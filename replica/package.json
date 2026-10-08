@@ -1,0 +1,19 @@
+{
+  "name": "dil-replica",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A runnable replica of ChatGPT's Intelligent UI (DIL / GenUI): streaming DSL compiler, iframe + Worker sandbox, host renderer, view-state loop.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/*.test.js",
+    "compile": "node tools/compile-cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.13"
+  }
+}

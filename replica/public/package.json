@@ -1,0 +1,4 @@
+{
+  "//": "Browser code is native ES modules; this tells Node (tests) the same.",
+  "type": "module"
+}
