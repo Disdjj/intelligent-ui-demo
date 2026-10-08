@@ -1,5 +1,7 @@
 # Intelligent UI Demo
 
+> 感谢 [Linux.do 社区](https://linux.do/) 的交流与分享，为本项目带来启发与帮助。
+
 拆解 ChatGPT「Intelligent UI」（内部代号 DIL / GenUI）的实现方式，并给出一个可运行的复刻。
 
 - 📝 **[BLOG.zh-CN.md](BLOG.zh-CN.md)**：完整的实现解析，以及与 [AG-UI](https://docs.ag-ui.com/)、[A2UI](https://a2ui.org/) 的对照
